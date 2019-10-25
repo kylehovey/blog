@@ -1,6 +1,6 @@
 ---
 math: true
-permalink: /crouching-trig-hidden-fractal
+permalink: crouching-trig-hidden-fractal
 title: Crouching Trig, Hidden Fractal
 layout: page
 ---
