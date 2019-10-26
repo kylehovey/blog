@@ -68,7 +68,7 @@ def predicate(z):
         # If the result is infinite, we end up here
         return False
 
-cases = filter(predicate, grid_sample(100, 100)
+cases = filter(predicate, grid_sample(100, 100))
 
 print "There are {} cases.".format(len(cases))
 {% endhighlight %}
@@ -88,8 +88,8 @@ image = Img.new("RGB", (imageWidth, imageHeight))
 granularity = 1
 
 # In spatial units
-width = imageWidth/granularity
-height = imageHeight/granularity
+width = imageWidth/float(granularity)
+height = imageHeight/float(granularity)
 
 # Find the location of a complex number in the image
 # @param dim - in spatial units
@@ -130,7 +130,8 @@ granularity = 10
 resolution = 1/float(granularity)
 
 # In spatial units
-width, height = imageWidth/granularity, imageHeight/granularity
+width = imageWidth/float(granularity)
+height = imageHeight/float(granularity)
 
 for u in range(imageWidth):
     for v in range(imageHeight):
