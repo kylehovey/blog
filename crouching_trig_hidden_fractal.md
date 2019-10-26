@@ -27,7 +27,7 @@ It seems to be accurate within many decimal places though, even when using order
 In any case, I wanted to see what other Gaussian Integers mapped to Gaussian Integers under the function I was testing. I fired up Python and hacked together a few tests. First, I needed a way of getting my hands on some samples.
 
 {% highlight Python %}
-# @param {width} - Width of spacial domain
+# @param {width} - Width of spatial domain
 # @param {samples} - sample count along one side
 # @return - square grid of samples at even intervals
 def grid_sample(width, samples):
@@ -84,15 +84,15 @@ from PIL import Image as Img
 imageWidth, imageHeight = 144, 90
 image = Img.new("RGB", (imageWidth, imageHeight))
 
-# In pixels per spacial unit
+# In pixels per spatial unit
 granularity = 1
 
-# In spacial units
+# In spatial units
 width = imageWidth/granularity
 height = imageHeight/granularity
 
 # Find the location of a complex number in the image
-# @param dim - in spacial units
+# @param dim - in spatial units
 # @param offset - in pixels
 # @return - in pixels
 def to_image_coord(dim, offset):
@@ -123,13 +123,13 @@ transform = lambda z: tan(cos(sin(z)))
 imageWidth, imageHeight = 500, 500
 image = Img.new("RGB", (imageWidth, imageHeight))
 
-# In pixels per spacial unit
+# In pixels per spatial unit
 granularity = 10
 
-# in spacial units per pixel
+# in spatial units per pixel
 resolution = 1/float(granularity)
 
-# In spacial units
+# In spatial units
 width, height = imageWidth/granularity, imageHeight/granularity
 
 for u in range(imageWidth):
@@ -175,10 +175,10 @@ transform = lambda z: tan(cos(sin(z)))
 imageWidth, imageHeight = 900, 1440
 image = Img.new("RGB", (imageWidth, imageHeight))
 
-# In pixels per spacial unit
+# In pixels per spatial unit
 granularity = 100
 
-# In spacial units
+# In spatial units
 width, height = imageWidth/granularity, imageHeight/granularity
 
 for u in range(imageWidth):
