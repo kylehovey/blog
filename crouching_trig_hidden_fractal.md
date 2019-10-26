@@ -7,17 +7,17 @@ layout: page
 
 ## Discovery
 
-In some esoteric need to further my math addiction, I recently purchased a [HP48](https://en.wikipedia.org/wiki/HP_48_series) Reverse Polish Notation calculator. I was demonstrating the workings of the stack to my friend, and how each trig function supported complex numbers out-of-the-box. I absentmindedly entered \\(4 + 5i\\) into the stack, then pressed each trig key in sequence: \\(\sin\\), \\(\cos\\), \\(\tan\\). I was really surprised to see that the result was not some unwieldy floating point, but rather was simply:
+In some esoteric need to further my math addiction, I recently purchased a [HP48](https://en.wikipedia.org/wiki/HP_48_series){:target="_blank"} Reverse Polish Notation calculator. I was demonstrating the workings of the stack to my friend, and how each trig function supported complex numbers out-of-the-box. I absentmindedly entered \\(4 + 5i\\) into the stack, then pressed each trig key in sequence: \\(\sin\\), \\(\cos\\), \\(\tan\\). I was really surprised to see that the result was not some unwieldy floating point, but rather was simply:
 
 \\[ \tan(\sin(\cos(4+5i))) = -i \\]
 
-To understand why this was surprising, it is important to note that sin, cos, and tan are all [transcendental functions](https://en.wikipedia.org/wiki/Transcendental_function). This means that you cannot express any of these functions using a polynomial with a finite amount of terms. Also, these functions are periodic with respect to multiples of pi, which itself is irrational and transcendental. For real numbers, at least, these functions never have integer output for integer input. More formally, you cannot form a set of integers that is closed under any of these functions.
+To understand why this was surprising, it is important to note that sin, cos, and tan are all [transcendental functions](https://en.wikipedia.org/wiki/Transcendental_function){:target="_blank"}. This means that you cannot express any of these functions using a polynomial with a finite amount of terms. Also, these functions are periodic with respect to multiples of pi, which itself is irrational and transcendental. For real numbers, at least, these functions never have integer output for integer input. More formally, you cannot form a set of integers that is closed under any of these functions.
 
 Gaussian Integers resemble the integers in a few ways, but in general are a different beast. They are defined as any complex number \\(a+bi\\) such that \\(a\\) and \\(b\\) are integers.
 
-Since there is no [total ordering](https://en.wikipedia.org/wiki/Total_order) in a two-dimensional space, many properties found in the real integers do not apply. [Primality](https://en.wikipedia.org/wiki/Gaussian_integer#Gaussian_primes), for example, is something much more difficult to define and intuitively grasp. Multiplication in the world of complex numbers is [rotation and scaling](http://acko.net/blog/how-to-fold-a-julia-fractal/), which we have a bad intuition over whenever composing operations.
+Since there is no [total ordering](https://en.wikipedia.org/wiki/Total_order){:target="_blank"} in a two-dimensional space, many properties found in the real integers do not apply. [Primality](https://en.wikipedia.org/wiki/Gaussian_integer#Gaussian_primes){:target="_blank"}, for example, is something much more difficult to define and intuitively grasp. Multiplication in the world of complex numbers is [rotation and scaling](http://acko.net/blog/how-to-fold-a-julia-fractal/){:target="_blank"}, which we have a bad intuition over whenever composing operations.
 
-For whatever reason though, it seems that a Gaussian Integer input to this composition of trig functions mapped to a Gaussian integer on output. There is a good chance that the number is not exactly a Gaussian Integer, but floating point error and numerical approximation makes it so. These functions are represented by [Taylor Series](https://en.wikipedia.org/wiki/Taylor_series) in the processor, which are never exact representations of the true transcendental function.
+For whatever reason though, it seems that a Gaussian Integer input to this composition of trig functions mapped to a Gaussian integer on output. There is a good chance that the number is not exactly a Gaussian Integer, but floating point error and numerical approximation makes it so. These functions are represented by [Taylor Series](https://en.wikipedia.org/wiki/Taylor_series){:target="_blank"} in the processor, which are never exact representations of the true transcendental function.
 
 \\[ \cos(x) = \displaystyle \sum_{n=0}^\infty \frac{x^{2n}(-1)^{2n}}{2n!} \approx 1 - \frac{x^2}{2} + \frac{x^4}{24} + \mathcal{O}(x^5) \\]
 
@@ -216,8 +216,8 @@ I think this one turned out the coolest. The yellow pixels represent inputs that
 
 ![Inner Fractal](/blog/images/trig_fractal/inner_fractal.png)
 
-Why are there squares? I think that these represent points that map to Gaussian Integers under the function I am examining, and the width/height of the squares is the [smallest number](https://en.wikipedia.org/wiki/Machine_epsilon) my computer can represent in this context.
+Why are there squares? I think that these represent points that map to Gaussian Integers under the function I am examining, and the width/height of the squares is the [smallest number](https://en.wikipedia.org/wiki/Machine_epsilon){:target="_blank"} my computer can represent in this context.
 
 ## Closing Thoughts
 
-I end this exploration with no real conclusion as to why these fractal regions of the complex plane are closed under these functions. Is this fact extant without numerical approximation? I still have many un-answered questions about these fractals, and hope to one day get to the bottom of this.
+I end this exploration with no real conclusion as to why these fractal regions of the complex plane are closed under these functions. Is this fact extant without numerical approximation? I still have many unanswered questions about these fractals, and hope to one day get to the bottom of this.
