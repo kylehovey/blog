@@ -32,11 +32,11 @@ In any case, I wanted to see what other Gaussian Integers mapped to Gaussian Int
 # @return - square grid of samples at even intervals
 def grid_sample(width, samples):
     out = []
-    radius = int(round(samples / 2))
+    radius = int(round(samples/2))
     ds = width / float(samples)
 
-    for a in range(-radius, radius):
-        for b in range(-radius, radius):
+    for a in range(-radius, radius + 1):
+        for b in range(-radius, radius + 1):
             out.append(a*ds + b*1j*ds)
 
     return out
@@ -73,15 +73,13 @@ cases = filter(predicate, grid_sample(100, 100))
 print "There are {} cases.".format(len(cases))
 {% endhighlight %}
 
-`There are 1012 cases.`
+`There are 1008 cases.`
 
 There was hundreds! Now I wondered what that might look like in the Complex Plane. I used Python Image Library to render a quick image where inputs that mapped to Gaussian Integers would be colored blue, and otherwise be left black.
 
 {% highlight Python %}
-from PIL import Image as Img
-
 # In pixels
-imageWidth, imageHeight = 144, 90
+imageWidth, imageHeight = 100, 30
 image = Img.new("RGB", (imageWidth, imageHeight))
 
 # In pixels per spatial unit
@@ -101,12 +99,10 @@ for sample in cases:
     coord = (x, y)
 
     if 0 <= x < imageWidth and 0 <= y < imageHeight:
-        image.putpixel(coord, (93, 188, 210))
+        image.putpixel(coord, (0, 0, 255))
 
 image.show()
 {% endhighlight %}
-
-This output was of course square (because of the square sampling I created with `grid_sample`), but I cropped it to show the only pixels that got highlighted. This is about the real axis:
 
 ![First Look](/blog/images/trig_fractal/first_look.png)
 
@@ -116,7 +112,7 @@ This was more surprising. The numbers seemed to exhibit some periodicity, but al
 transform = lambda z: tan(cos(sin(z)))
 
 # In pixels
-imageWidth, imageHeight = 500, 500
+imageWidth, imageHeight = 500, 340
 image = Img.new("RGB", (imageWidth, imageHeight))
 
 # In pixels per spatial unit
@@ -131,8 +127,8 @@ for u in range(imageWidth):
             # This could be "infinite", thus the try/except
             result = transform(real_part + imag_part*1j)
 
-            elif is_gaussian_integer(result, 1e-100):
-                image.putpixel((u, v), (0, 255, 0)
+            if is_gaussian_integer(result, 1e-100):
+                image.putpixel((u, v), (0, 0, 255))
         except:
             pass
 
@@ -162,11 +158,11 @@ colors = [
 transform = lambda z: tan(cos(sin(z)))
 
 # In pixels
-imageWidth, imageHeight = 900, 1440
+imageWidth, imageHeight = 1440, 900
 image = Img.new("RGB", (imageWidth, imageHeight))
 
 # In pixels per spatial unit
-granularity = 100
+granularity = 30
 
 for u in range(imageWidth):
     for v in range(imageHeight):
