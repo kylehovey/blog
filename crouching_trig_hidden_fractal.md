@@ -87,10 +87,6 @@ image = Img.new("RGB", (imageWidth, imageHeight))
 # In pixels per spatial unit
 granularity = 1
 
-# In spatial units
-width = imageWidth/float(granularity)
-height = imageHeight/float(granularity)
-
 # Find the location of a complex number in the image
 # @param dim - in spatial units
 # @param offset - in pixels
@@ -128,10 +124,6 @@ granularity = 10
 
 # in spatial units per pixel
 resolution = 1/float(granularity)
-
-# In spatial units
-width = imageWidth/float(granularity)
-height = imageHeight/float(granularity)
 
 for u in range(imageWidth):
     for v in range(imageHeight):
@@ -178,10 +170,6 @@ image = Img.new("RGB", (imageWidth, imageHeight))
 
 # In pixels per spatial unit
 granularity = 100
-
-# In spatial units
-width = imageWidth/float(granularity)
-height = imageHeight/float(granularity)
 
 for u in range(imageWidth):
     for v in range(imageHeight):
