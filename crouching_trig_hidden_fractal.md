@@ -214,4 +214,4 @@ I think this one turned out the coolest. The yellow pixels represent inputs that
 
 ## Closing Thoughts
 
-I end this exploration with no real conclusion as to why these fractal regions of the complex plane are closed under these functions. Is this fact extant without numerical approximation? I still have many unanswered questions about these fractals, and hope to one day get to the bottom of this.
+I end this exploration with no real conclusion as to why these fractal regions of the complex plane map to Gaussian Integers under these functions. Is this fact extant without numerical approximation? I still have many unanswered questions about these fractals, and hope to one day get to the bottom of this.
