@@ -122,13 +122,10 @@ image = Img.new("RGB", (imageWidth, imageHeight))
 # In pixels per spatial unit
 granularity = 10
 
-# in spatial units per pixel
-resolution = 1/float(granularity)
-
 for u in range(imageWidth):
     for v in range(imageHeight):
-        real_part = (u - imageWidth*0.5)*resolution
-        imag_part = (v - imageHeight*0.5)*resolution
+        real_part = (u - imageWidth*0.5)/granularity
+        imag_part = (v - imageHeight*0.5)/granularity
 
         try:
             # This could be "infinite", thus the try/except
