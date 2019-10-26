@@ -17,7 +17,7 @@ Since there is no [total ordering](https://en.wikipedia.org/wiki/Total_order){:t
 
 For whatever reason though, it seems that a Gaussian Integer input to this composition of trig functions mapped to a Gaussian integer on output. There is a good chance that the number is not exactly a Gaussian Integer, but floating point error and numerical approximation makes it so. These functions are represented by [Taylor Series](https://en.wikipedia.org/wiki/Taylor_series){:target="_blank"} in the processor, which are never exact representations of the true transcendental function.
 
-\\[ \cos(x) = \displaystyle \sum_{n=0}^\infty \frac{x^{2n}(-1)^{2n}}{2n!} \approx 1 - \frac{x^2}{2} + \frac{x^4}{24} + \mathcal{O}(x^5) \\]
+\\[ \cos(x) = \displaystyle \sum_{n=0}^\infty \frac{x^{2n}(-1)^{2n}}{2n!} \approx 1 - \frac{x^2}{2} + \frac{x^4}{24} + \mathcal{O}(x^6) \\]
 
 It seems to be accurate within many decimal places though, even when using orders of approximation far lower than what the calculator must use:
 
@@ -180,7 +180,8 @@ image = Img.new("RGB", (imageWidth, imageHeight))
 granularity = 100
 
 # In spatial units
-width, height = imageWidth/granularity, imageHeight/granularity
+width = imageWidth/float(granularity)
+height = imageHeight/float(granularity)
 
 for u in range(imageWidth):
     for v in range(imageHeight):
