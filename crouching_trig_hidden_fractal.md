@@ -9,7 +9,7 @@ In some esoteric need to further my math addiction, I recently purchased a [HP48
 
 \\[ \tan(\cos(\sin(4+5i))) = i \\]
 
-To understand why this was surprising, it is important to note that sin, cos, and tan are all [transcendental functions](https://en.wikipedia.org/wiki/Transcendental_function){:target="_blank"}. This means that you cannot express any of these functions using a polynomial with a finite amount of terms. Also, these functions are periodic with respect to multiples of pi, which itself is irrational and transcendental. For real numbers, at least, these functions never have integer output for integer input. More formally, you cannot form a set of integers that is closed under any of these functions.
+To understand why this was surprising, it is important to note that sin, cos, and tan are all [transcendental functions](https://en.wikipedia.org/wiki/Transcendental_function){:target="_blank"}. This means that you cannot express any of these functions using a polynomial with a finite amount of terms. Also, these functions are periodic with respect to multiples of pi, which itself is irrational and transcendental. For real numbers, at least, these functions never have integer output for integer input (unless zero). More formally, you cannot form a set of integers that is closed under any of these functions.
 
 Gaussian Integers resemble the integers in a few ways, but in general are a different beast. They are defined as any complex number \\(a+bi\\) such that \\(a\\) and \\(b\\) are integers.
 
