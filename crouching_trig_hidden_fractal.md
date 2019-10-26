@@ -5,11 +5,9 @@ title: Crouching Trig, Hidden Fractal
 layout: page
 ---
 
-## Discovery
-
 In some esoteric need to further my math addiction, I recently purchased a [HP48](https://en.wikipedia.org/wiki/HP_48_series){:target="_blank"} Reverse Polish Notation calculator. I was demonstrating the workings of the stack to my friend, and how each trig function supported complex numbers out-of-the-box. I absentmindedly entered \\(4 + 5i\\) into the stack, then pressed each trig key in sequence: \\(\sin\\), \\(\cos\\), \\(\tan\\). I was really surprised to see that the result was not some unwieldy floating point, but rather was simply:
 
-\\[ \tan(\sin(\cos(4+5i))) = -i \\]
+\\[ \tan(\cos(\sin(4+5i))) = i \\]
 
 To understand why this was surprising, it is important to note that sin, cos, and tan are all [transcendental functions](https://en.wikipedia.org/wiki/Transcendental_function){:target="_blank"}. This means that you cannot express any of these functions using a polynomial with a finite amount of terms. Also, these functions are periodic with respect to multiples of pi, which itself is irrational and transcendental. For real numbers, at least, these functions never have integer output for integer input. More formally, you cannot form a set of integers that is closed under any of these functions.
 
@@ -25,8 +23,6 @@ It seems to be accurate within many decimal places though, even when using order
 
 \\[ cos(1) = 0.540302\dots \\]
 \\[ cos(1) \approx 1 - \frac{1}{2} + \frac{1}{24} = 0.541666 \\]
-
-## Exploration
 
 In any case, I wanted to see what other Gaussian Integers mapped to Gaussian Integers under the function I was testing. I fired up Python and hacked together a few tests. First, I needed a way of getting my hands on some samples.
 
@@ -65,7 +61,7 @@ def is_gaussian_integer(z, epsilon = 1e-20):
 
 def predicate(z):
     try:
-        result = tan(sin(cos(z)))
+        result = tan(cos(sin(z)))
 
         return is_gaussian_integer(result)
     except:
@@ -118,12 +114,10 @@ This output was of course square (because of the square sampling I created with 
 
 ![First Look](/blog/images/trig_fractal/first_look.png)
 
-## Looking Further
-
 This was more surprising. The numbers seemed to exhibit some periodicity, but also symmetry about the real axis. I abandoned my search for closure over some subset of Gaussian Integers for a moment and wanted to look deeper into this pattern. I began to test for non-integer inputs with the same property, and also re-wrote the algorithm a bit so that it only tested a sample per output pixel.
 
 {% highlight Python %}
-transform = lambda z: tan(sin(cos(z)))
+transform = lambda z: tan(cos(sin(z)))
 
 # In pixels
 imageWidth, imageHeight = 500, 500
@@ -159,7 +153,7 @@ This was the result:
 
 ![Higher Granularity](/blog/images/trig_fractal/higher_granularity.png)
 
-I feel like I’ve seen this fractal before. I recognize that different functions would produce different fractals, but the complexity in this answer really surprised me. Even when trying different functions, I still got fractal results.
+I feel like I’ve seen this fractal before. I recognize that different functions would produce different fractals, but the complexity in this answer really surprised me. Even when trying different functions, I still got fractal results:
 
 ![Another Function](/blog/images/trig_fractal/other.png)
 
@@ -216,7 +210,7 @@ I think this one turned out the coolest. The yellow pixels represent inputs that
 
 ![Inner Fractal](/blog/images/trig_fractal/inner_fractal.png)
 
-Why are there squares? I think that these represent points that map to Gaussian Integers under the function I am examining, and the width/height of the squares is the [smallest number](https://en.wikipedia.org/wiki/Machine_epsilon){:target="_blank"} my computer can represent in this context.
+(Note that this is rotated 90 degrees to fit on the page better). Why are there squares, apparently [conformally mapped](https://en.wikipedia.org/wiki/Conformal_map){:target="_blank"} about poles? I think that these represent points that map to Gaussian Integers under the function I am examining, and the width/height of the squares is the [smallest number](https://en.wikipedia.org/wiki/Machine_epsilon){:target="_blank"} my computer can represent in this context.
 
 ## Closing Thoughts
 
