@@ -10,3 +10,4 @@ This is a kitchen sink for random thoughts that I would like to share. Feel free
 
 **Math:**
 1 - [Crouching Tiger, Hidden Fractal](./crouching-trig-hidden-fractal)
+2 - [Turing Basins](./turing-basins)
