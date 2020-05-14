@@ -151,7 +151,7 @@ Game of Life seems to allow many generations to exist in the phase-transition be
 
 To test this hypothesis, I wanted to graph one more Cellular Automaton: Day and Night. This CA has the interesting property that a structure can be built from live cells surrounded by dead cells, or equivalently with the same structure of dead cells surrounded by live cells (thus the name). This CA supports gliders and complex structures, and (if I had to bet money) probably is Turing Complete. Here is the complexity graph that Day and Night produced:
 
-![Day_and_Night_Complexity](/blog/images/turing_basins/day_and_night_255.png)
+![Day_and_Night_Complexity](/blog/images/turing_basins/graphs/day_and_night_255.png)
 
 The board:
 
@@ -159,7 +159,7 @@ The board:
 
 It looks very similar to the Game of Life curve, save for the fact that this structure seems higher-order. That is to say that there is an inflection point in the monotonic asymptotic descent towards eventual steady-state complexity. Just for fun, I ran a much larger simulation of Day and Night with 1000 generations instead of 255 to see what would happen:
 
-![Further_Day_and_Night_Complexity](/blog/images/turing_basins/day_and_night_1000.png)
+![Further_Day_and_Night_Complexity](/blog/images/turing_basins/graphs/day_and_night_1000.png)
 
 ## Further Thoughts
 
