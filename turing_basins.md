@@ -113,7 +113,7 @@ To be honest, I expected the trend in compressed file size, and consequently the
 
 The progression of complexity for the Replicator Cellular Automata predictably stayed the same throughout all 255 generations in each of the 10 trials. This made sense, since the Replicator CA copies existing patterns, and thus starting with a very complex (fully random) image you would continue to get more of the same:
 
-![Replicator_Complexity](/blog/images/turing_basins/replicator.png)
+![Replicator_Complexity](/blog/images/turing_basins/graphs/replicator.png)
 
 The board:
 
@@ -121,7 +121,7 @@ The board:
 
 This is where things got more surprising. The Anneal CA, a system known for producing blob-like structures with smooth perimeters, quickly ate through the initial high complexity and reached an extremely low steady-state ending complexity. More surprising than how readily this CA chewed through the complexity each trial was how smoothly it seemed to follow what appeared to be an exponentially decreasing curve:
 
-![Anneal_Complexity](/blog/images/turing_basins/anneal.png)
+![Anneal_Complexity](/blog/images/turing_basins/graphs/anneal.png)
 
 The board:
 
@@ -129,7 +129,7 @@ The board:
 
 The Seeds CA is known for being an "explosive" system that, with almost any starting structures, will fill the board with patterns. Seeds quickly ate through complexity but appeared to over-shoot its long-term steady-state and asymptotically leveled off to a higher complexity within tens of generations:
 
-![Seeds_Complexity](/blog/images/turing_basins/seeds.png)
+![Seeds_Complexity](/blog/images/turing_basins/graphs/seeds.png)
 
 The board:
 
@@ -137,7 +137,7 @@ The board:
 
 Of course, the real question was "How does Game of Life behave under this measure?". After all, Game of Life is known to be Turing Complete, so if this measure is to be worth anything in the search for similar systems, then it must produce remarkable results when measuring the Game of Life. I was pleasantly surprised to see that the Game of Life indeed did show some very different behavior than any of the previously described CA's:
 
-![Game_of_Life_Complexity](/blog/images/turing_basins/Game_of_Life.png)
+![Game_of_Life_Complexity](/blog/images/turing_basins/graphs/Game_of_Life.png)
 
 The board:
 
