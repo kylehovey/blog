@@ -115,17 +115,33 @@ The progression of complexity for the Replicator Cellular Automata predictably s
 
 ![Replicator_Complexity](/blog/images/turing_basins/replicator.png)
 
+The board:
+
+<img src="/blog/images/turing_basins/animations/replicator.gif" alt="Replicator Animation" width="500"/>
+
 This is where things got more surprising. The Anneal CA, a system known for producing blob-like structures with smooth perimeters, quickly ate through the initial high complexity and reached an extremely low steady-state ending complexity. More surprising than how readily this CA chewed through the complexity each trial was how smoothly it seemed to follow what appeared to be an exponentially decreasing curve:
 
 ![Anneal_Complexity](/blog/images/turing_basins/anneal.png)
 
+The board:
+
+<img src="/blog/images/turing_basins/animations/anneal.gif" alt="Anneal Animation" width="500"/>
+
 The Seeds CA is known for being an "explosive" system that, with almost any starting structures, will fill the board with patterns. Seeds quickly ate through complexity but appeared to over-shoot its long-term steady-state and asymptotically leveled off to a higher complexity within tens of generations:
 
-![Seed_Complexity](/blog/images/turing_basins/seed.png)
+![Seeds_Complexity](/blog/images/turing_basins/seeds.png)
+
+The board:
+
+<img src="/blog/images/turing_basins/animations/seeds.gif" alt="Seeds Animation" width="500"/>
 
 Of course, the real question was "How does Game of Life behave under this measure?". After all, Game of Life is known to be Turing Complete, so if this measure is to be worth anything in the search for similar systems, then it must produce remarkable results when measuring the Game of Life. I was pleasantly surprised to see that the Game of Life indeed did show some very different behavior than any of the previously described CA's:
 
 ![Game_of_Life_Complexity](/blog/images/turing_basins/Game_of_Life.png)
+
+The board:
+
+<img src="/blog/images/turing_basins/animations/Game_of_Life.gif" alt="Game of Life Animation" width="500"/>
 
 Notice how slowly the asymptotic steady-state complexity is approached with each trial of the Game of Life. Sure, Game of Life eats complexity much like Anneal, but it does it in a way that supports _hundreds_ of generations before the system effectively reaches the asymptotic floor of complexity in the system.
 
@@ -137,6 +153,9 @@ To test this hypothesis, I wanted to graph one more Cellular Automaton: Day and 
 
 ![Day_and_Night_Complexity](/blog/images/turing_basins/day_and_night_255.png)
 
+The board:
+
+<img src="/blog/images/turing_basins/animations/day_and_night.gif" alt="Day And Night Animation" width="500"/>
 
 It looks very similar to the Game of Life curve, save for the fact that this structure seems higher-order. That is to say that there is an inflection point in the monotonic asymptotic descent towards eventual steady-state complexity. Just for fun, I ran a much larger simulation of Day and Night with 1000 generations instead of 255 to see what would happen:
 
