@@ -67,7 +67,7 @@ It is hard to express the gravity of that statement, let alone the philosophical
 
 In short, this means that we may be able to probe an entropic theory on abiogenesis by investigating the possibility that a Turing Machine would form from the physics of the universe, or at least that we have some precedent to warrant further investigation on the connections between computation and life.
 
-You also might be wondering why I am equating cognition and a theory of mind with abiogenesis, but keep in mind that even single-celled organisms have been capable of computation for millions of years. Biological computation [predates the existence of neurons](https://www.youtube.com/watch?v=RjD1aLm4Thg) and is actively used by living creatures when developing a body. Even trees communicate and compute rudimentary decisions by [using my cilium as a communication medium](http://www.bbc.com/earth/story/20141111-plants-have-a-hidden-internet). I think that it is worthwhile to examine how computational structures arise out of the physics of a system.
+You also might be wondering why I am equating cognition and a theory of mind with abiogenesis, but keep in mind that even single-celled organisms have been capable of computation for millions of years. Biological computation [predates the existence of neurons](https://www.youtube.com/watch?v=RjD1aLm4Thg) and is actively used by living creatures when developing a body. Even trees communicate and compute rudimentary decisions by [using mycilium as a communication medium](http://www.bbc.com/earth/story/20141111-plants-have-a-hidden-internet). I think that it is worthwhile to examine how computational structures arise out of the physics of a system.
 
 ## Oops, All Turing Complete
 
@@ -113,11 +113,19 @@ To be honest, I expected the trend in compressed file size, and consequently the
 
 The progression of complexity for the Replicator Cellular Automata predictably stayed the same throughout all 255 generations in each of the 10 trials. This made sense, since the Replicator CA copies existing patterns, and thus starting with a very complex (fully random) image you would continue to get more of the same:
 
+![Replicator_Complexity](/blog/images/turing_basins/replicator.png)
+
 This is where things got more surprising. The Anneal CA, a system known for producing blob-like structures with smooth perimeters, quickly ate through the initial high complexity and reached an extremely low steady-state ending complexity. More surprising than how readily this CA chewed through the complexity each trial was how smoothly it seemed to follow what appeared to be an exponentially decreasing curve:
+
+![Anneal_Complexity](/blog/images/turing_basins/anneal.png)
 
 The Seeds CA is known for being an "explosive" system that, with almost any starting structures, will fill the board with patterns. Seeds quickly ate through complexity but appeared to over-shoot its long-term steady-state and asymptotically leveled off to a higher complexity within tens of generations:
 
+![Seed_Complexity](/blog/images/turing_basins/seed.png)
+
 Of course, the real question was "How does Game of Life behave under this measure?". After all, Game of Life is known to be Turing Complete, so if this measure is to be worth anything in the search for similar systems, then it must produce remarkable results when measuring the Game of Life. I was pleasantly surprised to see that the Game of Life indeed did show some very different behavior than any of the previously described CA's:
+
+![Game_of_Life_Complexity](/blog/images/turing_basins/Game_of_Life.png)
 
 Notice how slowly the asymptotic steady-state complexity is approached with each trial of the Game of Life. Sure, Game of Life eats complexity much like Anneal, but it does it in a way that supports _hundreds_ of generations before the system effectively reaches the asymptotic floor of complexity in the system.
 
@@ -127,8 +135,12 @@ Game of Life seems to allow many generations to exist in the phase-transition be
 
 To test this hypothesis, I wanted to graph one more Cellular Automaton: Day and Night. This CA has the interesting property that a structure can be built from live cells surrounded by dead cells, or equivalently with the same structure of dead cells surrounded by live cells (thus the name). This CA supports gliders and complex structures, and (if I had to bet money) probably is Turing Complete. Here is the complexity graph that Day and Night produced:
 
+![Day_and_Night_Complexity](/blog/images/turing_basins/day_and_night_255.png)
 
-It looks very similar to the Game of Life curve, save for the fact that this structure seems higher-order. That is to say that there is an inflection point in the monotonic asymptotic descent towards eventual steady-state complexity.
+
+It looks very similar to the Game of Life curve, save for the fact that this structure seems higher-order. That is to say that there is an inflection point in the monotonic asymptotic descent towards eventual steady-state complexity. Just for fun, I ran a much larger simulation of Day and Night with 1000 generations instead of 255 to see what would happen:
+
+![Further_Day_and_Night_Complexity](/blog/images/turing_basins/day_and_night_1000.png)
 
 ## Further Thoughts
 
