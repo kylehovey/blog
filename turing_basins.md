@@ -145,14 +145,6 @@ The board:
 
 <img src="/blog/images/turing_basins/animations/replicator.gif" alt="Replicator Animation" width="500"/>
 
-This is where things got more surprising. The Anneal CA, a system known for producing blob-like structures with smooth perimeters, quickly ate through the initial high complexity and reached an extremely low steady-state ending complexity. More surprising than how readily this CA chewed through the complexity each trial was how smoothly it seemed to follow what appeared to be an exponentially decreasing curve:
-
-![Anneal_Complexity](/blog/images/turing_basins/graphs/anneal.png)
-
-The board:
-
-<img src="/blog/images/turing_basins/animations/anneal.gif" alt="Anneal Animation" width="500"/>
-
 The Seeds CA is known for being an "explosive" system that, with almost any starting structures, will fill the board with patterns. Seeds quickly ate through complexity but appeared to over-shoot its long-term steady-state and asymptotically leveled off to a higher complexity within tens of generations:
 
 ![Seeds_Complexity](/blog/images/turing_basins/graphs/seeds.png)
@@ -160,6 +152,14 @@ The Seeds CA is known for being an "explosive" system that, with almost any star
 The board:
 
 <img src="/blog/images/turing_basins/animations/seeds.gif" alt="Seeds Animation" width="500"/>
+
+This is where things got more surprising. The Anneal CA, a system known for producing blob-like structures with smooth perimeters, ate through the initial high complexity and reached a low steady-state ending complexity after a hundred or so generations. More surprising than how readily this CA chewed through the complexity each trial was how smoothly it seemed to follow what appeared to be an exponentially decreasing curve:
+
+![Anneal_Complexity](/blog/images/turing_basins/graphs/anneal.png)
+
+The board:
+
+<img src="/blog/images/turing_basins/animations/anneal.gif" alt="Anneal Animation" width="500"/>
 
 Of course, the real question was "How does Game of Life behave under this measure?". After all, Game of Life is known to be Turing Complete, so if this measure is to be worth anything in the search for similar systems, then it must produce remarkable results when measuring the Game of Life. I was pleasantly surprised to see that the Game of Life indeed did show some very different behavior than any of the previously described CA's:
 
@@ -169,9 +169,9 @@ The board:
 
 <img src="/blog/images/turing_basins/animations/Game_of_Life.gif" alt="Game of Life Animation" width="500"/>
 
-Notice how slowly the asymptotic steady-state complexity is approached with each trial of the Game of Life. Sure, Game of Life eats complexity much like Anneal, but it does it in a way that supports _hundreds_ of generations before the system effectively reaches the asymptotic floor of complexity in the system.
+Notice how slowly the asymptotic steady-state complexity is approached with each trial of the Game of Life. Sure, Game of Life eats complexity much like Anneal, but it does it in a way that supports _hundreds_ of generations before the system effectively reaches the asymptotic floor of complexity in the system. Even still, Anneal seemed to consume complexity at a somewhat slow rate. I have not yet found a glider structure in Anneal, but I wonder if computation is possible on the boundaries of the blob-like structures in that world.
 
-There is a name for this concept: [The Edge of Chaos](https://en.wikipedia.org/wiki/Edge_of_chaos){:target="_blank"}: the space between order and disorder. This concept shows up in many places, most importantly (here at least) as it pertains to [Self-Organized Criticality](https://en.wikipedia.org/wiki/Self-organized_criticality){:target="_blank"}, a phenomenon where complexity evolves as an emergent phenomenon of a system. Self-Organized Criticality typically occurs at the phase transition between two states of a system, and can be used to explain an alarming amount of physical and abstract phenomena.
+There is a name for this concept of transition in complexity: [The Edge of Chaos](https://en.wikipedia.org/wiki/Edge_of_chaos){:target="_blank"}: the space between order and disorder. This concept shows up in many places, most importantly (here at least) as it pertains to [Self-Organized Criticality](https://en.wikipedia.org/wiki/Self-organized_criticality){:target="_blank"}, a phenomenon where complexity evolves as an emergent phenomenon of a system. Self-Organized Criticality typically occurs at the phase transition between two states of a system, and can be used to explain an alarming amount of physical and abstract phenomena.
 
 Game of Life seems to allow many generations to exist in the phase-transition between high-complexity and low-complexity board states, which could indicate that it can sustain Self-Organized Criticality. This isn't actually surprising. This was one of the traits the original inventors of Cellular Automata discovered in many of the systems they researched. To date though, I have not seen such an analysis on the procession of complexity and how it facilitates Self-Organized Criticality along the Edge of Chaos. I posit that systems capable of computation, or at least useful persistent structures like gliders that serve as building blocks for a Turing Machine will exist in systems that show a similar slow-burn on the available complexity in the system.
 
@@ -189,7 +189,7 @@ It looks very similar to the Game of Life curve, save for the fact that this str
 
 ## Further Thoughts
 
-It looks like there has been [research adjacent](https://www.researchgate.net/publication/224211888_Artificial_life_the_second_law_of_thermodynamics_and_Kolmogorov_Complexity){:target="_blank"} to this topic, albeit this analysis was done on the computer simulation [Tierra](https://en.wikipedia.org/wiki/Tierra_%28computer_simulation%29){:target="_blank"}, and not on Cellular Automata. Regardless, they also found the complexity (as measured by a compression algorithm) to decrease with time, apparently violating the assumption that entropy must increase in a closed system. All life-like cellular automata I have analyzed so far seem to be monotone decreasing in complexity/entropy with each generation, but I wonder what rules might yield the opposite behavior. Even so, if a violation of increasing entropy heralds the capability for computational structures, how would that relate to our universe where entropy is bound to increase globally? Computers obviously exist in our universe, and thus are tautological results of the physics in our world.
+It seems there has been [research adjacent](https://www.researchgate.net/publication/224211888_Artificial_life_the_second_law_of_thermodynamics_and_Kolmogorov_Complexity){:target="_blank"} to this topic, albeit this analysis was done on the computer simulation [Tierra](https://en.wikipedia.org/wiki/Tierra_%28computer_simulation%29){:target="_blank"}, and not on Cellular Automata. Regardless, they also found the complexity (as measured by a compression algorithm) to decrease with time, apparently violating the assumption that entropy must increase in a closed system. All life-like cellular automata I have analyzed so far seem to be monotone decreasing in complexity/entropy with each generation, but I wonder what rules might yield the opposite behavior. Even so, if a violation of increasing entropy heralds the capability for computational structures, how would that relate to our universe where entropy is bound to increase globally? Computers obviously exist in our universe, and thus are tautological results of the physics in our world.
 
 The smoothness of these complexity curves are baffling and inspiring to me. Why are they so regular? What governs their shape? Can you predict the curve with any accuracy from the rules of the CA alone, or do you have to measure emergent behavior of the system as a whole? What type of curves are these? They appear to be exponential, oscillatory, or sigmoid in shape, yet there are so many curves that fit those descriptions that I would be naive to assume equality with some common functions without further justification.
 
