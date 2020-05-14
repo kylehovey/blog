@@ -163,7 +163,7 @@ It looks very similar to the Game of Life curve, save for the fact that this str
 
 ## Further Thoughts
 
-The smoothness of these complexity curves is baffling and inspiring to me. Why are they so regular? What governs their shape? Can you predict the curve with any accuracy from the rules of the CA alone, or do you have to measure emergent behavior of the system as a whole? What type of curves are these? They appear to be exponential, oscillatory, or sigmoid in shape, yet there are so many curves that fit those descriptions that I would be naive to assume equality with some common functions without further justification.
+The smoothness of these complexity curves are baffling and inspiring to me. Why are they so regular? What governs their shape? Can you predict the curve with any accuracy from the rules of the CA alone, or do you have to measure emergent behavior of the system as a whole? What type of curves are these? They appear to be exponential, oscillatory, or sigmoid in shape, yet there are so many curves that fit those descriptions that I would be naive to assume equality with some common functions without further justification.
 
 I would like to analyze all 262,144 Life-Like Cellular Automata using this method and characterize them into groups based upon their complexity curve from random initial states. I wonder if it would shed light on rules that have not yet been explored yet that might have interesting or useful behavior. Perhaps the generation count from starting complexity to some band within steady-state complexity could be enough information to compress the entropic nature of a CA into one number.
 
