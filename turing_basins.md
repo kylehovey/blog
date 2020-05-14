@@ -1,7 +1,7 @@
 ---
 math: true
 permalink: turing-basins
-title: Turing Basins
+title: Turing's Hammer - Computation From Chaos
 layout: page
 ---
 

@@ -6,7 +6,7 @@ title: Welcome
 
 Welcome to my Blog! I am a Computational Mathematics graduate from Utah State University. I grew up in the foothills of California, nestled between Tahoe and Yosemite. I am happiest when trudging up a fresh trail or starting up a new hobby.
 
-## [Turing Basins](./turing-basins)
+## [Turing's Hammer - Computation from Chaos](./turing-basins)
 [![Turing Basins](/blog/images/turing_basins/expository/rule_73.jpg)](./turing-basins)
 
 ## [Crouching Tiger, Hidden Fractal](./crouching-trig-hidden-fractal)
