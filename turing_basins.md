@@ -5,11 +5,15 @@ title: Turing Basins
 layout: page
 ---
 
+![Starry Lake](/blog/images/turing_basins/expository/lake_stars.jpg)
+
 Do you ever get the feeling that there is some universal structure underpinning reality? It is easy when staring at the night sky to feel there must be something to the big picture of existence. Sometimes it feels like it is on the tip of our tongues. Sometimes, very rarely, we can get a glimpse into the machinery that drives existence.
 
 Recently, I have been exploring the conceptual link between [abiogenesis](https://en.wikipedia.org/wiki/Abiogenesis){:target="_blank"} and the notion that sentience and computational structures can arise naturally as a consequence of the logical underpinnings of reality. Following is the journey that led me to this point, and the fascinating links between disparate subjects that I have come across as a result. I hope that they might provide a similar amount of excitement to you as they have for me.
 
 ## The Beginning
+
+![GEB](/blog/images/turing_basins/expository/GEB.jpg)
 
 This semantic journey began back in High School when my friend Richard implored that I pick up a copy of a veritable tome titled "[Gödel, Escher, Bach](https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach){:target="_blank"}". I couldn't have predicted how that book would transform my notion of self or my thoughts towards an existential framework to embed my thoughts on life, but it suffices to say that work has shaped the lens which I view most of my philosophy through nowadays.
 
@@ -17,7 +21,11 @@ Given the incredibly broad scope of the book, it is difficult to explain, in sho
 
 ## Abiogenesis
 
+![Kelp](/blog/images/turing_basins/expository/kelp.jpg)
+
 When discussing the origin of meaning and sentience, the discussion will inevitably drift towards philosophy of creation. There are many hypothesis for how life arose from inorganic material (abiogenesis), but one of my favorite explorations on this topic is the [Miller-Urey Experiment](https://en.wikipedia.org/wiki/Miller%E2%80%93Urey_experiment){:target="_blank"} wherein researchers created a closed-system that contained base elements required for life (Water, Methane, Ammonia, and Hydrogen) and a means of perturbing that solution to see what would happen. The perturbation involved boiling the solution, running the steam through an electric spark gap, condensing the steam, then recirculating the condensate back into the original reservoir.
+
+![Miller Urey Experiment Setup](/blog/images/turing_basins/expository/Miller_Urey.png)
 
 The researchers found that, after a day of operation, 11 out of the 20 essential amino acids that create the building blocks for organic chemistry as we know it were created spontaneously in this closed system. The conclusion was that lightning, geothermal activity, and the presence of these common compounds on early earth could have paved the way for the first organisms on Earth.
 
@@ -25,11 +33,15 @@ Several variations of this experiment have been performed since and confirm unde
 
 ## But Why?
 
+![Cosmic Background Radiation](/blog/images/turing_basins/expository/cosmic_background_radiation.jpg)
+
 We have established that the building blocks for life are a structure that arise naturally in different chemical scenarios. So what? Even if we have that, why are biological structures the eventual output of the physics that govern our universe? This question is, of course, much harder to answer. The key to understanding this question may come down to one of the most fundamental and brutal laws of our universe: the 2nd law of thermodynamics:
 
 "[T]he total entropy of an isolated system can never decrease over time, and is constant if and only if all processes are reversible."
 
 For starters, entropy is generally a measure of the amount of states a system can have given a macroscopic state of the system as a whole. For instance, there are billions of way a small amount of gas might be at a temperature 70 degrees. Entropy is inexorably linked to the concept of energy, and describes how energy is dispersed at a given temperature. The gist of the 2nd law is that entropy is bound to increase in a closed system and everything, including the universe itself, is heading towards a concept known as [Heat Death](https://en.wikipedia.org/wiki/Heat_death_of_the_universe){:target="_blank"}. The stars will all eventually burn out, and all matter will eventually decay into its lowest possible energy state. The inevitable conclusion is that matter is heading towards a global average, and structure will eventually decay from existence.
+
+![Tangled Headphones](/blog/images/turing_basins/expository/tangled_headphones.jpg)
 
 But, then, how does that explain life? Life spontaneously organizes into very regular structures. The human body is so complex that we still only have a basic grasp of some of its most basic systems. Life is a popular counter-example to the theory of entropy increase, since life inherently produces islands of lower entropy (equated here with complex structure, thus less micro-states explaining the same macro-phenomenon). The key takeaway in this context is that life, while having _much_ lower entropy than its surroundings is actually very efficient at decreasing entropy as a whole. The Earth is far from a closed system, and the vast majority of energy dispersed on Earth comes from the sun. If you were to close of the earth from all external energy sources, you could envision that life would decay quite rapidly and entropy consequently would increase at an alarming rate.
 
@@ -39,6 +51,8 @@ To make this less hand-wavy, there has been considerable research on this topic.
 
 ## Complexity and Entropy
 
+![Complex Computer Wires](/blog/images/turing_basins/expository/complex_wires.jpg)
+
 You might realize that the term "complexity" is tossed around in concert with entropy. This is where we start to blur the lines between computation, information, physics, and biology. An alternate definition of Entropy is [Shannon Entropy](https://en.wikipedia.org/wiki/Entropy_%28information_theory%29){:target="_blank"}, which is a "20 Questions" approach to describing the states of a system. Simply put, the Shannon Entropy of a system is the amount of yes/no questions (expressed commonly as "bits"){:target="_blank"} you have to ask before you are 100% positive you know what is being talked about. The Shannon entropy of a coin-flip is then one bit, 2.58 bits for a six-sided-die, and less for a loaded six-sided-die. Another factor worth mentioning is that Shannon Entropy represents the average amount of bits required to describe a system's state, not just one of its states.
 
 Complexity, on the other hand, is a measure of exactly how much talking you must do in order to describe a given state of a system. In information theory, a common measure of complexity is [Kolmogorov Complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity){:target="_blank"} which is the length of the shortest computer program that produces the state in question. It is normally framed within the context of [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus){:target="_blank"} (which lets you represent computer programs in the most terse and mathematically rigorous form possible). For example, given a picture you took on your phone, the Kolmogorov complexity of that image would be akin to the smallest file you could compress that image into without losing any detail.
@@ -46,6 +60,8 @@ Complexity, on the other hand, is a measure of exactly how much talking you must
 A fascinating consequence of defining complexity in this way is that, in general, you cannot form a heuristic for finding the Kolmogorov Complexity of arbitrary data. You heard me correctly, it is impossible to create a program to compute the Kolmogorov Complexity of any string of information. This result is a consequence of many of the same limitations of logic itself that lead to undecidable questions such as [The Halting Problem](https://en.wikipedia.org/wiki/Halting_problem){:target="_blank"}, [The Continuum Hypothesis](https://en.wikipedia.org/wiki/Continuum_hypothesis){:target="_blank"}, and [Gödel's Incompleteness Theorems](https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems){:target="_blank"}.
 
 Under the definition of Shannon Entropy, entropy is the expected value (think of average) of the Kolmogorov Complexity of the system being measured. More simply stated, entropy is a measure of average complexity of a system. This is conceptually sufficient for my diatribe on entropy here, but for further justification there are [wonderful papers](https://homepages.cwi.nl/~paulv/papers/info.pdf){:target="_blank"} that have been written on this topic. Thus it makes sense to talk about complexity when speaking of entropy, or vice-versa. It is also important to not conflate the two, as they are describing different measures of a system.
+
+![Shannon Entropy of Two Coins](/blog/images/turing_basins/expository/entropy.jpg)
 
 You might be wondering how this new information theoretic definition relates to the physical definition we use in thermodynamics. It turns out that Shannon Entropy and Thermodynamic Entropy are [roughly equivalent](https://en.wikipedia.org/wiki/Entropy_in_thermodynamics_and_information_theory){:target="_blank"}, which is one of the first "bridges" so to say between the conversation about abiogenesis and the topics of information theory (since abiogenesis can be framed in terms of thermodynamic entropy).
 
@@ -55,11 +71,15 @@ To connect the concept of abiogenesis and the Miller Urey Experiment to a hypoth
 
 The most basic model for a computer is perhaps the [Turing Machine](https://en.wikipedia.org/wiki/Turing_machine){:target="_blank"}, named after its creator Alan Turing. The Turing machine is a mathematical description of a device capable of taking a program as input, running that program, and producing output from that program. The computer you are reading this post on is a very advanced and optimized version of this simple concept, and all computers today (save for quantum) operate on its principles.
 
+![Turing Machine](/blog/images/turing_basins/expository/turing_machine.svg)
+
 To say that a problem is computable is equivalent to saying that a program exists that can be run on a Turing Machine *and* that program will eventually terminate and yield the answer to that problem as output. A machine that is equivalent to a Turing Machine is said to be Turing Complete. What is fascinating about Turing Machines is that the problem "given this program, decide whether or not it will terminate when run on a Turing Machine" is undecidable, which is to say that no program exists that can compute that answer. This is called the [The Halting Problem](https://en.wikipedia.org/wiki/Halting_problem){:target="_blank"} (mentioned before when discussing Kolmogorov Complexity), and is dual to [Gödel's Incompleteness Theorems](https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems){:target="_blank"} (which use similar logic to show some problems in math are undecidable). Maybe you are beginning to see just how connected all of these concepts really are.
 
 Believe me, things get so much stranger.
 
 ## Different Sides of The Same Coin - The Church Turing Thesis
+
+![Neural Map of a Brain](/blog/images/turing_basins/expository/brain_neural_map.jpg)
 
 Turing was an industrious fellow and, aside from independently deriving Gödel's Incompleteness Theorems, also worked with Alonzo Church (the inventor of Lambda Calculus, a formal way to describe programs) to tackle a very important question: are there any problems you can solve that a computer can't, and vice-versa? According to [the thesis](https://en.wikipedia.org/wiki/Church%E2%80%93Turing_thesis){:target="_blank"}, surprisingly, the answer seems to be no. The thesis states that a problem can be solved in general (more formally, via an [effective method](https://en.wikipedia.org/wiki/Effective_method){:target="_blank"}) if and only if that problem is computable on a Turing Machine.
 
@@ -71,6 +91,8 @@ You also might be wondering why I am equating cognition and a theory of mind wit
 
 ## Oops, All Turing Complete
 
+![Redstone Logic](/blog/images/turing_basins/expository/redstone.jpg)
+
 Surprisingly enough, we already have quite a few examples of computation spontaneously arising in popular culture. Esoteric languages (programming languages designed to be hard to use) are a common hobby among programmers, but sometimes you don't have to invent the esoteric language and ones can be discovered instead.
 
 For instance, C++ templates were originally designed to provide an easier way to design generic function/class signatures that could accept a variety of types. Later, programmers found that you could chain and compose templates in a way that made them capable of computation. This accidental "feature" produced a language within a language. 
@@ -81,9 +103,13 @@ There are [numerous](http://beza1e1.tuxen.de/articles/accidentally_turing_comple
 
 ## Cellular Automata - One Context To Frame the Genesis of Computation
 
+![1D Cellular Automaton - Rule 73](/blog/images/turing_basins/expository/rule_73.jpg)
+
 Originally formulated by Stanislaw Ulam and John von Neumann, [Cellular Automata](https://en.wikipedia.org/wiki/Cellular_automaton){:target="_blank"} are grid-based universes that operate on very simple rules. Later, John Conway (who unfortunately passed away this year) found a very specific Cellular Automaton named the Game of Life. The rules of the game are fairly simple. The game board is a square grid of cells, each one is either alive or dead. The game is played by advancing the board state iteratively by following some basic rules about whether a living cell will die, survive, or a dead cell will be born, or continue to be dead. A living cell with two or three neighbors will survive, and a dead cell with three neighbors will become alive on the next generation.
 
 Even with these simple rules, Conway found that this game/universe supports persistent structures, the most famous of which is the Glider (a 3x3 construction of live cells that flies across the board). More surprisingly, researchers found that Gliders could be used to transmit information between structures on the grid, and logic could be triggered that would process that information. Eventually, someone created a [Turing Machine in the Game of Life](https://www.youtube.com/watch?v=My8AsV7bA94){:target="_blank"}.
+
+![Glider](/blog/images/turing_basins/expository/glider_animated.gif)
 
 Again, Conway did not create the rules of the Game of Life with computation in mind, yet a computer did exist as a state in the system he invented. This is not an isolated phenomenon in Cellular Automata, either. Stephan Wolfram has spent his life researching [what is possible with Cellular Automata](https://www.wolframscience.com/){:target="_blank"}. Even when the grid used for Cellular Automata is one-dimensional (instead of two-dimensional in the case of the Game of Life), researchers have constructed a Turing Machine using [rule 110](https://en.wikipedia.org/wiki/Rule_110){:target="_blank"}.
 
@@ -91,11 +117,11 @@ There are 262,144 Cellular Automata like the Game of Life, all of which are defi
 
 It is easy to think of Cellular Automata as a toy invented by Computer Scientists and logicians, but it is remarkable what they are capable of. Already we have found that they can simulate fluid flow, heat transfer, gravity, flame, predator/prey models, annealing processes, structural properties, and much more. Stephan Wolfram posits that Cellular Automata might be a valid framework to describe the physics of our universe, and while a very bold claim, there is [a lifetime of research](https://writings.stephenwolfram.com/2020/04/how-we-got-here-the-backstory-of-the-wolfram-physics-project/){:target="_blank"} backing his claims. I mention it here because it is important to realize that analysis of Cellular Automata could have deep implications relating back to our own universe, and shouldn't be discredited as mere thought experiments.
 
-## How We Got Here
+## The Experiment
+
+![Hubble Space Telescope](/blog/images/turing_basins/expository/hubble.jpg)
 
 Inspired by the Miller-Urey experiment, I wondered if there was some way to produce similar results with regard to computational structures in a given system. That is, given some space of systems, can you perturb the rules in a way that will eventually lead to a system capable of computation? Or, given one system, how might you find what a computer looks like in that world? The second question is much harder to answer, and is most likely the reason the discovery of new Turing Complete systems usually heralds some attention in academia. The first question, though, led me to what appears to be a valid way to measure the capability of a system for sustaining computational structures, and by extension of concepts like the Church Turing Thesis and works of Stephan Wolfram, life as well.
-
-## The Experiment
 
 The initial challenge is finding a space of systems that is easy to canonicalize, which would make it easy to explore and probe for computational life. For instance, it would be intractable to try and explore every possible program that could be written for a modern computer due to the astronomical count of possible systems that can be run on our machines. Sure, software like PowerPoint has been proven to be Turing Complete, but I see no way of measuring that objectively without constructing an example by hand and pointing at it intently. Creating a program that constructs all possible programs for a modern machine, let alone manually searching the quintillions of possibilities, would take thousands of lifetimes of work.
 
