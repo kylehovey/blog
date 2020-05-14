@@ -95,9 +95,9 @@ You also might be wondering why I am equating cognition and a theory of mind wit
 
 Surprisingly enough, we already have quite a few examples of computation spontaneously arising in popular culture. Esoteric languages (programming languages designed to be hard to use) are a common hobby among programmers, but sometimes you don't have to invent the esoteric language and ones can be discovered instead.
 
-For instance, C++ templates were originally designed to provide an easier way to design generic function/class signatures that could accept a variety of types. Later, programmers found that you could chain and compose templates in a way that made them capable of computation. This accidental "feature" produced a language within a language. 
+For instance, C++ templates were originally designed to provide an easier way to design generic function/class signatures that could accept a variety of types. Later, programmers found that you could chain and compose templates in a way that [made them capable of computation](http://web.archive.org/web/20131101122512/http://ubietylab.net/ubigraph/content/Papers/pdf/CppTuring.pdf){:target="_blank"}. This accidental "feature" produced a language within a language. 
 
-One of my favorite examples is that, given a very carefully constructed deck, the card game Magic The Gathering™ is also Turing Complete. The rules of the game were never intended to form a computer, but you can absolutely run any program you desire by following them.
+One of my favorite examples is that, given a very carefully constructed deck, the card game Magic The Gathering™ [is also Turing Complete](https://arxiv.org/abs/1904.09828){:target="_blank"}. The rules of the game were never intended to form a computer, but you can absolutely run any program you desire by following them.
 
 There are [numerous](http://beza1e1.tuxen.de/articles/accidentally_turing_complete.html){:target="_blank"} examples of Turing Machines popping out of thin air, including PowerPoint, Border Gateway Protocol (this is what organizes large sections of the global internet system), and most notably here, Cellular Automata.
 
