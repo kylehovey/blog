@@ -50,9 +50,23 @@ There it was, the massive serpent hiding in the structure of emergent complexity
 
 While beautiful, this representation would not mean much if it did not accomplish the goal we set out to achieve: a metric for classification of rules that behave in similar ways to a given starting rule. Starting from the Game of Life, I began examining nearby rules and found that the metric did indeed yield other rules that produced uncanny behavior.
 
-|B3/S013|B38/S013|B3/S23|B38/S238|
+*Rules Close to the Game of Life (B3/S23)*
+
+|B3/S23|B3/S013|B38/S013|B38/S238|
 |-|-|-|-|
-| <img alt="B3/S013" src="/blog/images/automata_nebula/animations/similar/gol_like/5640-B3-S013.gif" width="300px" /> | <img alt="B38/S013" src="/blog/images/automata_nebula/animations/similar/gol_like/5896-B38-S013.gif" width="300px" /> | <img alt="B3/S23" src="/blog/images/automata_nebula/animations/similar/gol_like/6152-B3-S23.gif" width="300px" /> | <img alt="B38/S238" src="/blog/images/automata_nebula/animations/similar/gol_like/137480-B38-S238.gif" width="300px" /> |
+| <img src="/blog/images/automata_nebula/animations/similar/gol_like/6152.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/gol_like/5640.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/gol_like/5896.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/gol_like/137480.gif" width="300px" /> |
+
+*Rules Close to Day and Night (B3678/S34678)*
+
+|B3678/S34678|B36/S01456|B3678/S01456|B3567-S01478|
+|-|-|-|-|
+| <img src="/blog/images/automata_nebula/animations/similar/dan_like/242120.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/dan_like/58952.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/dan_like/59336.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/dan_like/206568.gif" width="300px" /> |
+
+*Rules Close to Anneal (B4678/S35678)*
+
+|B4678/S35678|B468/S035678|B0123578/S0124|B46/S035678|
+|-|-|-|-|
+| <img src="/blog/images/automata_nebula/animations/similar/anneal_like/250320.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/anneal_like/250704.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/anneal_like/12207.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/anneal_like/250448.gif" width="300px" /> |
 
 ## Filtering The Rules
 
