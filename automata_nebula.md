@@ -15,6 +15,8 @@ This is exciting news, because past classifications of even elementary CA such a
 
 ## Abstract
 
+![Rule 30](/blog/images/automata_nebula/expository/rule_30.png)
+
 Stephen Wolfram (one of the biggest researchers in CA) [proposed](https://wpmedia.wolfram.com/uploads/sites/13/2018/02/02-2-2.pdf){:target="blank"} a four-level classification scheme for one dimensional cellular automata. He later extended these definitions to include two-dimensional cellular automata like the Life-Like CA we are looking at here. The classifications are:
 
 1. _Evolution leads to a homogeneous state._
@@ -38,6 +40,8 @@ The result of these simulations were 262,144 records of the average complexity i
 
 ## Using UMAP, a Digital Telescope
 
+![James Webb Space Telescope](/blog/images/automata_nebula/expository/webb.jpg)
+
 Obviously, no one has the time to go through the graphs of over a quarter million samples, so I needed to find a way to classify the results. Recently I have been infatuated with the [UMAP](https://umap-learn.readthedocs.io/en/latest/){:target="blank"} algorithm. It has the ability to compress data with thousands of dimensions into a lower dimensional space (in this case 2D or 3D) while still preserving structures/features in the data. It is a remarkable feat of algebraic topology that deserves more awareness of in the scientific community.
 
 When first learning about dimensionality reduction algorithms such as UMAP or [tSNE](https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding){:target="blank"}, I was extremely skeptical of their efficacy. It seemed impossible to retain structure when losing that many dimensions. What made their usage click for me was the knowledge that, even if your data lives in a space that has thousands of dimensions (called the ambient space), there is a very good chance that the _local dimension_ of real-world data is of much lower dimension than this. The goal, then, of UMAP is to preserve the structure found in the data by finding a good manifold to embed it into. For further understanding on this topic, check out the [presentation](https://www.youtube.com/watch?v=nq6iPZVUxZU){:target="blank"} that Leland McInnes (the creator of UMAP) gave on his algorithm.
@@ -48,7 +52,7 @@ Armed with UMAP, I fed the algorithm all 262,144 vectors (each with 256 dimensio
 
 ![UMAP Embedding](/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full.png)
 
-<a href="/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full_High_Res.png" download>High-Res Version</a>
+<a href="/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full_High_Res.png" download>(High-Res Version)</a>
 
 There it was, the massive [Hertzspring-Russel](https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram){:target="blank"}esque serpent hiding in the structure of emergent complexity in automata. It is important to note that compressing dimensions can make parts of the data look separate in the embedding, even though they are connected in the ambient space they came from. It would be reasonable to assume that the serpent is one continuous entity, and the "jump" in the center was a result of the embedding.
 
@@ -108,7 +112,7 @@ An important consideration is that UMAP is a non-deterministic algorithm. That i
 
 I used various languages to generate and analyze this data. The [automata simulator](https://github.com/kylehovey/automata_generator) was written in C++, and the program to assemble histories of the complexity snapshots was written in Bash. PNG compression was done with [Imagemagick](https://imagemagick.org/index.php) via conversion from ASCII PPM (the simple output of the C++ simulation) to PNG. The Bash script saves the complexity histories as separate rows (one per each run) in a CSV file (one for each rule).
 
-Then for the [data analysis](https://github.com/kylehovey/automata_analysis), I used Python to read in all of the CSV data and save it as a Numpy `ndarray`, while also averaging each of the ten trials I had generated for each of the rules. For each of the types of analysis I wanted to do, I made a Jupyter notebook that had access to Python 3 with all of the necessary dependencies for UMAP and displaying the results of the embeddings.
+Then for the [data analysis](https://github.com/kylehovey/automata_analysis), I used Python to read in all of the CSV data and save it as a Numpy `ndarray`, while also averaging each of the ten trials I had generated for each of the rules. For each of the types of analysis I wanted to do, I made a Jupyter notebook that had access to Python 3 with all of the necessary dependencies for UMAP and displaying the results of the embeddings. The GitHub repo does not have the full data committed to the repository as the Gun-zipped tar-ball is just over half a gigabyte in size.
 
 Lastly, I wanted a more natural way to explore the results and verify the structure of the embedding. I created a [web-app](https://github.com/kylehovey/automata_browser) using React and [TerraJS](https://rileyjshaw.com/terra/) that lets you select points in the serpent nebula and see what sort of automaton results from that point in the embedding. There is a zoomed view that shows neighboring points within a certain radius of the one that has been chosen. I also added the ability to enter rules and see where they are located in the serpent.
 
