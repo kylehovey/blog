@@ -44,7 +44,7 @@ In a sense, UMAP is a digital telescope that lets us look at constellations of h
 
 Armed with UMAP, I fed the algorithm all 262,144 vectors (each with 256 dimensions, one for each complexity snapshot) and patiently waited for the embedding to complete. After fifteen minutes of my laptop revving up my fans, I had my first snapshot of the overarching structure of the Life-Like CA:
 
-![Large Megallanic Cloud](/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full.png)
+![UMAP Embedding](/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full.png)
 
 There it was, the massive serpent hiding in the structure of emergent complexity in automata. It is important to note that compressing dimensions can make parts of the data look separate in the embedding, even though they are connected in the ambient space they came from. It would be reasonable to assume that the serpent is one continuous entity, and the "jump" in the center was a result of the embedding.
 
@@ -73,6 +73,20 @@ While beautiful, this representation would not mean much if it did not accomplis
 |B138/S12357|B124/S123467|B0124/S0123467|B038/S012358|
 |-|-|-|-|
 | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/maze_like/89354.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/maze_like/113686.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/maze_like/114199.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/maze_like/155401.gif" width="200px" /> |
+
+## Caveats and Room for Improvement
+
+You might notice that for the Anneal CA that there was an example that behaved like Anneal but oscillated between black and white states every generation. This was one of the most fascinating parts about this structure for me. Rules that normally would not be classified together clearly had similar behavior, even though they had different ways of expressing it.
+
+This didn't always work out for the best though, and there were cases of "close" rules that had obviously different behavior. I think this shows that this complexity metric either requires more resolution in the samples, or that some types of behavior are not adequately described by the procession of complexity alone.
+
+One major improvement that I could see benefiting this model would be a transformation on the data that would be resilient to translations in the complexity curves. For instance, perhaps one CA immediately takes a dive in complexity following one behavior, and another with similar behavior is just slightly slower to hit that tipping point. Both curves would look nearly identical, save for the latter one having the sigmoid-like decrease in complexity occur later in the curve. If you were to translate the first curve forward, or the second curve backward in time you would have a better metric for joining complexity like that.
+
+Another augmentation that could help refine this metric is examining the forward differences of each complexity curve instead of the raw data itself. I actually tried this and got another promising embedding:
+
+![UMAP Embedding](/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full_Diffs.png)
+
+Ultimately, I chose to spend the most time studying the embedding of the raw data because I did not want to impose my own nuanced constructions on the data. There is certainly much more that could be done to pre-process this data before embedding, and I am excited for what results that may yield.
 
 ## Reproducibility
 
