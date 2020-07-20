@@ -42,7 +42,7 @@ When first learning about dimensionality reduction algorithms such as UMAP or tS
 
 In a sense, UMAP is a digital telescope that lets us look at constellations of high-dimensional data that we have never had the ability to visualize before. Algorithms like tSNE have worked in similar ways in the past, but UMAP is the first algorithm to be efficient enough to run on data with thousands of dimensions using something as prosaic as a laptop and a dream. This is to say that UMAP scales incredibly well, especially when compared to what is already out there.
 
-Armed with UMAP, I fed the algorithm all 262,144 vectors (each with 256 dimensions, one for each complexity snapshot) and patiently waited for the embedding to complete. After fifteen minutes of my laptop revving up my fans, I had my first snapshot of the overarching structure of the Life-Like CA:
+Armed with UMAP, I fed the algorithm all 262,144 vectors (each with 256 dimensions, one for each complexity snapshot) and patiently waited for the embedding to complete. After fifteen minutes of my laptop revving up my fans, I had my first snapshot of the overarching structure of the Life-Like CA (points are colored by the average forward difference between each complexity snapshot):
 
 ![UMAP Embedding](/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full.png)
 
