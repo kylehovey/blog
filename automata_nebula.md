@@ -74,8 +74,18 @@ While beautiful, this representation would not mean much if it did not accomplis
 |-|-|-|-|
 | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/maze_like/89354.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/maze_like/113686.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/maze_like/114199.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/maze_like/155401.gif" width="200px" /> |
 
-## Filtering The Rules
+## Reproducibility
 
-While there is beauty in showing the structure of every possible rule, it is important to note that some classes of rules will not produce emergent behavior capable of universality. This is covered in more detail [in other research](https://www.ics.uci.edu/~eppstein/ca/wolfram.html){:target="blank"}. Essentially, rules that contain `B1` in their makeup will expand to infinity in all directions. Likewise, rules that contain `S01234` or `B23/S0` will do the same. Inversely, if a rule does not include `B2` or `B3`, any pattern will remain within its initial bounding box. This would make the formation of gliders impossible, which would prevent the formation of gliders. While it still may be possible for computation to occur in one-dimensional CA that exist on the boundaries of structures in both the first and second cases, I would like to examine only the types of CA that support universal structures that use gliders for the transport of information. This is how universality was proven in the Game of Life, after all.
+An important consideration is that UMAP is a non-deterministic algorithm. That is to say that each run of UMAP will most likely produce slightly different embeddings. I can verify that after running it around 50 times, the structure remained the same, but the orientation would sometimes differ.
 
-In order to filter the rules so that we are only examining systems that are capable of both expansion and contraction, we just need to look at rules that don't contain `B1` and contain either `B2` or `B3`. This reduces our search space by at least a factor of four.
+![Different Runs of UMAP](/blog/images/automata_nebula/plots/reproducibility/montage.png)
+
+## Source Code and Data Explorer
+
+I used various languages to generate and analyze this data. The [automata simulator](https://github.com/kylehovey/automata_generator) was written in C++, and the program to assemble histories of the complexity snapshots was written in Bash. PNG compression was done with [Imagemagick](https://imagemagick.org/index.php) via conversion from ASCII PPM (the simple output of the C++ simulation) to PNG. The Bash script saves the complexity histories as separate rows (one per each run) in a CSV file (one for each rule).
+
+Then for the [data analysis](https://github.com/kylehovey/automata_analysis), I used Python to read in all of the CSV data and save it as a Numpy `ndarray`, while also averaging each of the ten trials I had generated for each of the rules. For each of the types of analysis I wanted to do, I made a Jupyter notebook that had access to Python 3 with all of the necessary dependencies for UMAP and displaying the results of the embeddings.
+
+Lastly, I wanted a more natural way to explore the results and verify the structure of the embedding. I created a [web-app](https://github.com/kylehovey/automata_browser/settings) using React and [TerraJS](https://rileyjshaw.com/terra/) that lets you select points in the serpent nebula and see what sort of automaton results from that point in the embedding. There is a zoomed view that shows neighboring points within a certain radius of the one that has been chosen. I also added the ability to enter rules and see where they are located in the serpent.
+
+Please note that the page will take a few seconds to load as initializing the data for all quarter million rules is a processor-heavy task. As a result, I don't expect mobile performance to hold up (or even work). I'm open to PR's to improve the app.
