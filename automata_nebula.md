@@ -48,6 +48,8 @@ Armed with UMAP, I fed the algorithm all 262,144 vectors (each with 256 dimensio
 
 ![UMAP Embedding](/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full.png)
 
+<a href="/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full_High_Res.png" download>High-Res Version</a>
+
 There it was, the massive [Hertzspring-Russel](https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram){:target="blank"}esque serpent hiding in the structure of emergent complexity in automata. It is important to note that compressing dimensions can make parts of the data look separate in the embedding, even though they are connected in the ambient space they came from. It would be reasonable to assume that the serpent is one continuous entity, and the "jump" in the center was a result of the embedding.
 
 While beautiful, this representation would not mean much if it did not accomplish the goal we set out to achieve: a metric for classification of rules that behave in similar ways to a given starting rule. Starting from the Game of Life, I began examining nearby rules and found that the metric did indeed yield other rules that produced uncanny behavior.
