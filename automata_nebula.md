@@ -32,7 +32,7 @@ In a addition to the convenient dualistic simplicity of studying life-or-death C
 
 In order to get an amortized generalization of each rule, I started from random initial states of the universe with each cell having an equal probability of starting in any of the possible states. I then ran simulations for hundreds of generations with multiple random initial conditions and found the average complexity at each step. Other researchers looking into the general behavior of CA have taken this approach of random initial state and it seems to be a valid way to capture their behavior.
 
-Lastly, I chose to study only Life-Like CA. These are the totalistic CA rules that only depend on the Moore neighborhood of each cell. This made the search space something that I could simulate in reasonable time, given that it only had around a quarter million possible rules (even though it still took two weeks to generate all of the data).
+Lastly, I chose to study only Life-Like CA. These are the semi-totalistic CA rules that only depend on the Moore neighborhood of each cell. This made the search space something that I could simulate in reasonable time, given that it only had around a quarter million possible rules (even though it still took two weeks to generate all of the data).
 
 The result of these simulations were 262,144 records of the average complexity in bytes of the board of all possible Life-Like CA. Each record had 256 samples, each record was averaged from 10 runs, and each rule was run with a board size of 100x100 cells.
 
