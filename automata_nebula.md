@@ -54,25 +54,25 @@ While beautiful, this representation would not mean much if it did not accomplis
 
 |B3/S23|B3/S013|B38/S013|B38/S238|
 |-|-|-|-|
-| <img src="/blog/images/automata_nebula/animations/similar/gol_like/6152.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/gol_like/5640.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/gol_like/5896.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/gol_like/137480.gif" width="300px" /> |
+| <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/gol_like/6152.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/gol_like/5640.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/gol_like/5896.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/gol_like/137480.gif" width="200px" /> |
 
 *Rules Close to Day and Night (B3678/S34678)*
 
 |B3678/S34678|B36/S01456|B3678/S01456|B3567-S01478|
 |-|-|-|-|
-| <img src="/blog/images/automata_nebula/animations/similar/dan_like/242120.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/dan_like/58952.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/dan_like/59336.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/dan_like/206568.gif" width="300px" /> |
+| <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/dan_like/242120.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/dan_like/58952.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/dan_like/59336.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/dan_like/206568.gif" width="200px" /> |
 
 *Rules Close to Anneal (B4678/S35678)*
 
 |B4678/S35678|B468/S035678|B0123578/S0124|B46/S035678|
 |-|-|-|-|
-| <img src="/blog/images/automata_nebula/animations/similar/anneal_like/250320.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/anneal_like/250704.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/anneal_like/12207.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/anneal_like/250448.gif" width="300px" /> |
+| <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/anneal_like/250320.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/anneal_like/250704.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/anneal_like/12207.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/anneal_like/250448.gif" width="200px" /> |
 
 *Rules Close to Maze-Finder (B138/S12357)*
 
 |B138/S12357|B124/S123467|B0124/S0123467|B038/S012358|
 |-|-|-|-|
-| <img src="/blog/images/automata_nebula/animations/similar/maze_like/89354.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/maze_like/113686.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/maze_like/114199.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/maze_like/155401.gif" width="300px" /> |
+| <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/maze_like/89354.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/maze_like/113686.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/maze_like/114199.gif" width="200px" /> | <img style="max-width:initial;" src="/blog/images/automata_nebula/animations/similar/maze_like/155401.gif" width="200px" /> |
 
 ## Filtering The Rules
 
