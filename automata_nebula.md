@@ -68,6 +68,12 @@ While beautiful, this representation would not mean much if it did not accomplis
 |-|-|-|-|
 | <img src="/blog/images/automata_nebula/animations/similar/anneal_like/250320.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/anneal_like/250704.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/anneal_like/12207.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/anneal_like/250448.gif" width="300px" /> |
 
+*Rules Close to Maze-Finder (B138/S12357)*
+
+|B138/S12357|B124/S123467|B0124/S0123467|B038/S012358|
+|-|-|-|-|
+| <img src="/blog/images/automata_nebula/animations/similar/maze_like/89354.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/maze_like/113686.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/maze_like/114199.gif" width="300px" /> | <img src="/blog/images/automata_nebula/animations/similar/maze_like/155401.gif" width="300px" /> |
+
 ## Filtering The Rules
 
 While there is beauty in showing the structure of every possible rule, it is important to note that some classes of rules will not produce emergent behavior capable of universality. This is covered in more detail [in other research](https://www.ics.uci.edu/~eppstein/ca/wolfram.html){:target="blank"}. Essentially, rules that contain `B1` in their makeup will expand to infinity in all directions. Likewise, rules that contain `S01234` or `B23/S0` will do the same. Inversely, if a rule does not include `B2` or `B3`, any pattern will remain within its initial bounding box. This would make the formation of gliders impossible, which would prevent the formation of gliders. While it still may be possible for computation to occur in one-dimensional CA that exist on the boundaries of structures in both the first and second cases, I would like to examine only the types of CA that support universal structures that use gliders for the transport of information. This is how universality was proven in the Game of Life, after all.
