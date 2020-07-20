@@ -80,6 +80,8 @@ For reference, here is an annotated version of the embedding with some popular r
 
 ![UMAP Embedding](/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full_Annotated.png)
 
+What is fascinating about this embedding is that it extends the idea of Stephan Wolfram's four-level classification of CA to a continuum that can be embedded in as many dimensions as you see fit. CA classically known for supporting persistent structures and gliders such as Game of Life, Day and Night, and High Life exist in the middle of the serpent where the average difference is on the edge of chaos. CA that burn through complexity at a higher rate such as Morley, Anneal, and Diamoeba are far out on the tail of the serpent, along with many rules that result in universes that either die out quickly or fill the whole board with live cells (two low-complexity attractors). Meanwhile, rules like Replicator (which duplicates existing structure) exist in the head of the serpent where complexity stays roughly the same throughout the generations. Rules at the head seem to tend very quickly towards chaos, an apt opposite to the rules found in the tail.
+
 ## Caveats and Room for Improvement
 
 You might notice that for the Anneal CA that there was an example that behaved like Anneal but oscillated between black and white states every generation. This was one of the most fascinating parts about this structure for me. Rules that normally would not be classified together clearly had similar behavior, even though they had different ways of expressing it.
