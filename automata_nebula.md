@@ -1,7 +1,7 @@
 ---
 math: true
 permalink: automata-nebula
-title: Abstract Astronomy - Novel Classification of CA
+title: Digital Astronomy with Cellular Automata
 layout: page
 ---
 
