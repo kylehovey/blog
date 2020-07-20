@@ -76,6 +76,10 @@ While beautiful, this representation would not mean much if it did not accomplis
 |-|-|-|-|
 | <img src="/blog/images/automata_nebula/animations/similar/maze_like/89354.gif" width="200px" /> | <img src="/blog/images/automata_nebula/animations/similar/maze_like/113686.gif" width="200px" /> | <img src="/blog/images/automata_nebula/animations/similar/maze_like/114199.gif" width="200px" /> | <img src="/blog/images/automata_nebula/animations/similar/maze_like/155401.gif" width="200px" /> |
 
+For reference, here is an annotated version of the embedding with some popular rules:
+
+![UMAP Embedding](/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full_Annotated.png)
+
 ## Caveats and Room for Improvement
 
 You might notice that for the Anneal CA that there was an example that behaved like Anneal but oscillated between black and white states every generation. This was one of the most fascinating parts about this structure for me. Rules that normally would not be classified together clearly had similar behavior, even though they had different ways of expressing it.
