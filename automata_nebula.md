@@ -5,7 +5,7 @@ title: Digital Astronomy with Cellular Automata
 layout: page
 ---
 
-![Large Megallanic Cloud](/blog/images/automata_nebula/expository/large_megallanic_cloud.jpg)
+![UMAP Embedding](/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full_Annotated.png)
 
 In my [last post](/blog/turing-basins){:target=”blank”}, I shared my journey through understanding the link between entropy, thermodynamics, evolution, computation, and mathematics. At the end, I shared some preliminary research on using entropy/complexity to classify the behavior of Cellular Automata (CA) and perhaps pave a road to finding more universal CA (those [capable of computation](https://www.youtube.com/watch?v=My8AsV7bA94){:target="blank"}). At that time, I only had a handful of samples which, albeit showing promise, fell short of demonstrating concrete results.
 
@@ -81,10 +81,6 @@ While beautiful, this representation would not mean much if it did not accomplis
 |B138/S12357|B124/S123467|B0124/S0123467|B038/S012358|
 |-|-|-|-|
 | <img src="/blog/images/automata_nebula/animations/similar/maze_like/89354.gif" width="200px" /> | <img src="/blog/images/automata_nebula/animations/similar/maze_like/113686.gif" width="200px" /> | <img src="/blog/images/automata_nebula/animations/similar/maze_like/114199.gif" width="200px" /> | <img src="/blog/images/automata_nebula/animations/similar/maze_like/155401.gif" width="200px" /> |
-
-For reference, here is an annotated version of the embedding with some popular rules:
-
-![UMAP Embedding](/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full_Annotated.png)
 
 What is fascinating about this embedding is that it extends the idea of Stephen Wolfram's four-level classification of CA to a continuum that can be embedded in as many dimensions as you see fit. CA classically known for supporting persistent structures and gliders such as Game of Life, Day and Night, and High Life exist in the middle of the serpent where the average difference is on the edge of chaos. CA that burn through complexity at a higher rate such as Morley, Anneal, and Diamoeba are far out on the tail of the serpent, along with many rules that result in universes that either die out quickly or fill the whole board with live cells (two low-complexity attractors). Meanwhile, rules like Replicator (which duplicates existing structure) exist in the head of the serpent where complexity stays roughly the same throughout the generations. Rules at the head seem to tend very quickly towards chaos, an apt opposite to the rules found in the tail.
 

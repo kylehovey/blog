@@ -6,6 +6,9 @@ title: Welcome
 
 Welcome to my Blog! I am a Computational Mathematics graduate from Utah State University. I grew up in the foothills of California, nestled between Tahoe and Yosemite. I am happiest when trudging up a fresh trail or starting up a new hobby.
 
+## [Digital Astronomy with Cellular Automata](./automata-nebula)
+[![Digital Astronomy with Cellular Automata](/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full_Annotated.png)](./automata-nebula)
+
 ## [Turing's Hammer - Computation from Chaos](./turing-basins)
 [![Turing Basins](/blog/images/turing_basins/expository/rule_73.jpg)](./turing-basins)
 
