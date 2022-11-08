@@ -5,9 +5,9 @@ title: Mathematical Blind Spots
 layout: page
 ---
 
-TODO picture
+![A Mathematical Quandary](/blog/images/radians_and_blind_spots/title_card.png)
 
-All too many times in our educational paths the answer to curious inquiry is tautological: Why does it work that way? Because that is the way it has always been done, or at least the one we stuck with. One of the many reasons many fall in love with Mathematics is that more often than not, you are afforded the liberty to further question that class of answer and find deeper meaning where you may not expect to find it. There are certainly limits to this inquiry, the foundation of Mathematics relies on [axiomatic assumptions](https://en.wikipedia.org/wiki/Axiom) after all. Still, modern Mathematical education is fraught with these sorts of answers and much can be learned by being stubborn and persisting until you find the real answers.
+All too many times in our educational paths the answer to curious inquiry is tautological: Why does it work that way? Because that is the way it has always been done, or at least the one we stuck with. One of the many reasons many fall in love with Mathematics is that more often than not, you are afforded the liberty to further question that class of answer and find deeper meaning where you may not expect it. There are certainly limits to this inquiry, the foundation of Mathematics relies on [axiomatic assumptions](https://en.wikipedia.org/wiki/Axiom) after all. Still, modern Mathematical education is fraught with these sorts of answers and much can be learned by being stubborn and persisting until you find the real answers.
 
 ## An Embarrassing Question
 
