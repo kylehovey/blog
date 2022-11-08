@@ -46,7 +46,7 @@ To no surprise, the intuition comes easiest from the viewpoint of [Complex Analy
 
 To begin, we will examine [Euler's Formula](https://en.wikipedia.org/wiki/Euler%27s_formula){:target="_blank"}: A cornerstone of Mathematics by my favorite mathematician. It goes like this (this is a claim to be proven):
 
-\\[ e^{i\theta} = \cos(\theta) + i \sin(theta) \\]
+\\[ e^{i\theta} = \cos(\theta) + i \sin(\theta) \\]
 
 where \\( i \\) is the [imaginary unit](https://en.wikipedia.org/wiki/Imaginary_unit){:target="_blank"} and \\( e \\) is Euler's number. \\(e \\) is chosen as the base of the exponent \\(e^x\\) because the rate at which \\(e^x\\) increases in value is [equal to itself at all times](https://www.youtube.com/watch?v=m2MIpDrF7Es){:target="_blank"}. Wonderfully enough, when you feed the exponential function imaginary numbers [it begins to rotate](https://acko.net/blog/how-to-fold-a-julia-fractal/){:target="_blank"} in the [complex plane](https://en.wikipedia.org/wiki/Complex_plane){:target="_blank"}. More precisely, the complex point \\(e^{i\theta}\\) is the point of distance \\(1\\) from the origin lying along [the unit circle](https://en.wikipedia.org/wiki/Unit_circle){:target="_blank"} at angle \\( \theta \\) in the complex plane (and we will justify this):
 
