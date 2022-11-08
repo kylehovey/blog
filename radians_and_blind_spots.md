@@ -50,7 +50,7 @@ To begin, we will examine [Euler's Formula](https://en.wikipedia.org/wiki/Euler%
 
 where \\( i \\) is the [imaginary unit](https://en.wikipedia.org/wiki/Imaginary_unit) and \\( e \\) is Euler's number. \\(e \\) is chosen as the base of the exponent \\(e^x\\) because the rate at which \\(e^x\\) increases in value is [equal to itself at all times](https://www.youtube.com/watch?v=m2MIpDrF7Es). Wonderfully enough, when you feed the exponential function imaginary numbers [it begins to rotate](https://acko.net/blog/how-to-fold-a-julia-fractal/) in the [complex plane](https://en.wikipedia.org/wiki/Complex_plane). More precisely, the complex point \\(\e^{i\theta}\\) is the point of distance \\(1\\) from the origin lying along [the unit circle](https://en.wikipedia.org/wiki/Unit_circle) at angle \\( \theta \\) in the complex plane:
 
-TODO unit circle
+![The Unit Circle](/blog/images/radians_and_blind_spots/unit_circle.svg)
 
 Recall that the derivative is an operator that determines the _rate of change_ of a given function with respect to its input. For a moment, instead of assuming that the argument to Euler's Formula is an angle, let's instead pretend that it is time. The derivative in this case now becomes velocity. In the world of complex numbers, this velocity has a direction (whereas in real numbers it would just be a single number). We can easily enough [find the derivative](https://en.wikipedia.org/wiki/Exponential_function#Derivatives_and_differential_equations) of our complex exponential function:
 
@@ -58,7 +58,7 @@ Recall that the derivative is an operator that determines the _rate of change_ o
 
 This means that for any point along the trajectory of our complex exponential \\( Z = e^{i t} \\) the velocity will simply be \\( iZ \\). As multiplication by \\( i \\) is just rotation of our position through a right angle, and our position is always equidistant to the origin, our velocity will always be the same and at a right angle to our position from the origin. The only trajectory where this construction is valid is a circle. The key insight here is that as our position is always of distance \\( 1 \\) from the origin, our velocity is also \\( 1 \\) unit per second. This means that after \\(2 \pi \\) seconds, we will have travelled a full revolution around the circle (because this is the [circumference](https://en.wikipedia.org/wiki/Circumference) of a circle of radius \\( 1 \\)).
 
-TODO picture of a circle with right angle trajectory
+![Picture of a Circle Path With Right Angle Trajectory](/blog/images/radians_and_blind_spots/complex_unit_circle.png)
 
 But where do \\(\sin\\) and \\(\cos\\) come into play? It may seem obvious from the standard construction of the unit circle where the horizontal and vertical positions of any points are \\(\sin\\) and \\(\cos\\) respectively, but that would be jumping the gun. Yes, both our complex exponential and the trigonometric view of the unit circle trace the same paths, but we have no justification yet that they are one and the same. Fundamentally, we still have no intuition for what \\( \theta \\) is when fed to \\(\sin\\) and \\(\cos\\); we don't have justification that both paths are traced at the same rate (at least not yet). And, most certainly, we cannot simply define away ambiguity at this point.
 
