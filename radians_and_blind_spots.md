@@ -54,7 +54,7 @@ where \\( i \\) is the [imaginary unit](https://en.wikipedia.org/wiki/Imaginary_
 
 Recall that the derivative is an operator that determines the _rate of change_ of a given function with respect to its input. For a moment, instead of assuming that the argument to Euler's Formula is an angle, let's instead pretend that it is time. The derivative in this case now becomes velocity. In the world of complex numbers, this velocity has a direction (whereas in real numbers it would just be a single number). We can easily enough [find the derivative](https://en.wikipedia.org/wiki/Exponential_function#Derivatives_and_differential_equations) of our complex exponential function:
 
-\\[ \frac{d}{dx} e^{i t} = ie^{i t} \\]
+\\[ \frac{d}{dt} e^{i t} = ie^{i t} \\]
 
 This means that for any point along the trajectory of our complex exponential \\( Z = e^{i t} \\) the velocity will simply be \\( iZ \\). As multiplication by \\( i \\) is just rotation of our position through a right angle, and our position is always equidistant to the origin, our velocity will be unchanging and at a right angle to our position from the origin. The only trajectory where this construction is valid is a circle. The key insight here is that as our position is always of distance \\( 1 \\) from the origin, our velocity is also \\( 1 \\) unit per second. This means that after \\(2 \pi \\) seconds, we will have travelled a full revolution around the circle (because this is the [circumference](https://en.wikipedia.org/wiki/Circumference){:target="_blank"} of a circle of radius \\( 1 \\)).
 
