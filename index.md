@@ -6,6 +6,9 @@ title: Welcome
 
 Welcome to my Blog! I am a Computational Mathematics graduate from Utah State University. I grew up in the foothills of California, nestled between Tahoe and Yosemite. I am happiest when trudging up a fresh trail or starting up a new hobby.
 
+## [Mathematical Blind Spots](./mathematical-blind-spots)
+[![Mathematical Blind Spots](/blog/images/radians_and_blind_spots/title_card.png)](./mathematical-blind-spots)
+
 ## [Digital Astronomy with Cellular Automata](./automata-nebula)
 [![Digital Astronomy with Cellular Automata](/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full_Annotated.png)](./automata-nebula)
 
