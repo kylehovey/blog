@@ -48,7 +48,7 @@ To begin, we will examine [Euler's Formula](https://en.wikipedia.org/wiki/Euler%
 
 \\[ e^{i\theta} = \cos(\theta) + i \sin(theta) \\]
 
-where \\( i \\) is the [imaginary unit](https://en.wikipedia.org/wiki/Imaginary_unit) and \\( e \\) is Euler's number. \\(e \\) is chosen as the base of the exponent \\(e^x\\) because the rate at which \\(e^x\\) increases in value is [equal to itself at all times](https://www.youtube.com/watch?v=m2MIpDrF7Es). Wonderfully enough, when you feed the exponential function imaginary numbers [it begins to rotate](https://acko.net/blog/how-to-fold-a-julia-fractal/) in the [complex plane](https://en.wikipedia.org/wiki/Complex_plane). More precisely, the complex point \\(\e^{i\theta}\\) is the point of distance \\(1\\) from the origin lying along [the unit circle](https://en.wikipedia.org/wiki/Unit_circle) at angle \\( \theta \\) in the complex plane:
+where \\( i \\) is the [imaginary unit](https://en.wikipedia.org/wiki/Imaginary_unit) and \\( e \\) is Euler's number. \\(e \\) is chosen as the base of the exponent \\(e^x\\) because the rate at which \\(e^x\\) increases in value is [equal to itself at all times](https://www.youtube.com/watch?v=m2MIpDrF7Es). Wonderfully enough, when you feed the exponential function imaginary numbers [it begins to rotate](https://acko.net/blog/how-to-fold-a-julia-fractal/) in the [complex plane](https://en.wikipedia.org/wiki/Complex_plane). More precisely, the complex point \\(e^{i\theta}\\) is the point of distance \\(1\\) from the origin lying along [the unit circle](https://en.wikipedia.org/wiki/Unit_circle) at angle \\( \theta \\) in the complex plane:
 
 ![The Unit Circle](/blog/images/radians_and_blind_spots/unit_circle.svg)
 
