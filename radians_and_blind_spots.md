@@ -15,7 +15,7 @@ Every once in a while, it is fun to go back over the things you have learned and
 
 At first, I felt kind of embarrassed. We are all at different points in our journey in Mathematics, but this is something I learned over ten years ago. Surely the answer must be obvious, and I must have forgotten it. I asked some of my Math friends to see if they knew the answer, and also searched the internet to see what I expected to be a quick answer and resolution to my question. To my surprise, finding the answer took me on a journey and taught me a valuable lesson about our assumptions when we study Mathematics.
 
-Now, I know what you may be thinking: _Radians are obvious! What are you missing? If you don't use radians, you have to carry around extra terms whenever you do math involving trigonometry. Who wants to use \\(\sin(\frac{\pi \theta}{180})\\) when you could just use \\(\cos(\theta)\\)?_ That much is very clear: Whatever the reason, when you use Radians the Math just turns out _cleaner_.
+Now, I know what you may be thinking: _Radians are obvious! What are you missing? If you don't use radians, you have to carry around extra terms whenever you do math involving trigonometry. Who wants to use \\(\cos(\frac{\pi \theta}{180})\\) when you could just use \\(\cos(\theta)\\)?_ That much is very clear: Whatever the reason, when you use Radians the Math just turns out _cleaner_.
 
 Everywhere I asked, and most places I found online the answers generally fell into a few common categories:
 
@@ -46,7 +46,7 @@ To no surprise, the intuition comes easiest from the viewpoint of [Complex Analy
 
 To begin, we will examine [Euler's Formula](https://en.wikipedia.org/wiki/Euler%27s_formula): A cornerstone of Mathematics by my favorite mathematician. It goes like this (this is a claim to be proven):
 
-\\[ \e^{i\theta} = \cos(\theta) + i \sin(theta) \\]
+\\[ e^{i\theta} = \cos(\theta) + i \sin(theta) \\]
 
 where \\( i \\) is the [imaginary unit](https://en.wikipedia.org/wiki/Imaginary_unit) and \\( e \\) is Euler's number. \\(e \\) is chosen as the base of the exponent \\(e^x\\) because the rate at which \\(e^x\\) increases in value is [equal to itself at all times](https://www.youtube.com/watch?v=m2MIpDrF7Es). Wonderfully enough, when you feed the exponential function imaginary numbers [it begins to rotate](https://acko.net/blog/how-to-fold-a-julia-fractal/) in the [complex plane](https://en.wikipedia.org/wiki/Complex_plane). More precisely, the complex point \\(\e^{i\theta}\\) is the point of distance \\(1\\) from the origin lying along [the unit circle](https://en.wikipedia.org/wiki/Unit_circle) at angle \\( \theta \\) in the complex plane:
 
@@ -54,7 +54,7 @@ TODO unit circle
 
 Recall that the derivative is an operator that determines the _rate of change_ of a given function with respect to its input. For a moment, instead of assuming that the argument to Euler's Formula is an angle, let's instead pretend that it is time. The derivative in this case now becomes velocity. In the world of complex numbers, this velocity has a direction (whereas in real numbers it would just be a single number). We can easily enough [find the derivative](https://en.wikipedia.org/wiki/Exponential_function#Derivatives_and_differential_equations) of our complex exponential function:
 
-\\[ \frac{d}{dx} \e^{i t} = \e^{i t} \\]
+\\[ \frac{d}{dx} e^{i t} = e^{i t} \\]
 
 This means that for any point along the trajectory of our complex exponential \\( Z = e^{i t} \\) the velocity will simply be \\( iZ \\). As multiplication by \\( i \\) is just rotation of our position through a right angle, and our position is always equidistant to the origin, our velocity will always be the same and at a right angle to our position from the origin. The only trajectory where this construction is valid is a circle. The key insight here is that as our position is always of distance \\( 1 \\) from the origin, our velocity is also \\( 1 \\) unit per second. This means that after \\(2 \pi \\) seconds, we will have travelled a full revolution around the circle (because this is the [circumference](https://en.wikipedia.org/wiki/Circumference) of a circle of radius \\( 1 \\)).
 
@@ -95,7 +95,7 @@ or, more compactly:
 
 where \\('\\) represents the derivative. Since the real and imaginary parts of a complex numbers form the sides of a right triangle [whose hypotenuse](https://en.wikipedia.org/wiki/Complex_number#Polar_complex_plane) is the segment between that point and the origin, the magnitude (denoted as absolute value) of our complex exponential \\( e^{ix} = C(x) + iS(x) \\) is represented geometrically using [the Pythagorean Theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem) as \\( \sqrt{C^2 + S^2} \\). We wish to show that the length of our complex exponential is constant and of unit length. This is to say that the length does not change, and consequently the square of the length would not either (we take the square as it is easier to differentiate):
 
-\\[ \frac{d}{dx} |e^{ix}|^2 = \frac{d}{dx} (C^2 + S^2) = 2(CC' + SS') = 2(CC' - C'C) = 0 \\]
+\\[ \frac{d}{dx} \mid e^{ix} \mid ^2 = \frac{d}{dx} (C^2 + S^2) = 2(CC' + SS') = 2(CC' - C'C) = 0 \\]
 
 As \\( e^{i 0} = 1 \\), and the length is unchanging, the magnitude of our complex exponential is always \\( 1 \\). 
 
@@ -105,7 +105,7 @@ All that is left to prove is that \\(e^{ix}\\) has an angle of \\(x\\) when repr
 
 For reasons you will soon see, it is useful to consider the derivative of either side of this expression (read [here](https://en.wikipedia.org/wiki/Differentiation_of_trigonometric_functions) for further explanation of this derivative):
 
-\\[ \frac{d}{dx} \tan(\theta[(x)]((x))) = (1 + \tan^2(\theta))\theta' = (1 + \frac{S^2}{C^2})\theta' \\]
+\\[ \frac{d}{dx} \tan(\theta(x)) = (1 + \tan^2(\theta))\theta' = (1 + \frac{S^2}{C^2})\theta' \\]
 
 then, recalling from our previous proof that \\( C^2 + S^2 = 1 \\):
 
