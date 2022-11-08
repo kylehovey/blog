@@ -93,7 +93,7 @@ or, more compactly:
 \\[ C' = -S \\]
 \\[ S' = C \\]
 
-where \\('\\) represents the derivative. Since the real and imaginary parts of a complex numbers form the sides of a right triangle [whose hypotenuse](https://en.wikipedia.org/wiki/Complex_number#Polar_complex_plane) is the segment between that point and the origin, the magnitude (denoted as absolute value) of our complex exponential \\( e^{ix} = C(x) + iS(x) \\) is represented geometrically using [the Pythagorean Theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem) as \\( \sqrt{C^2 + S^2} \\). We wish to show that the length of our complex exponential is constant and of unit length. This is to say that the length does not change, and consequently the square of the length would not either (we take the square as it is easier to differentiate):
+where the apostrophe represents the derivative. Since the real and imaginary parts of a complex numbers form the sides of a right triangle [whose hypotenuse](https://en.wikipedia.org/wiki/Complex_number#Polar_complex_plane) is the segment between that point and the origin, the magnitude (denoted as absolute value) of our complex exponential \\( e^{ix} = C(x) + iS(x) \\) is represented geometrically using [the Pythagorean Theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem) as \\( \sqrt{C^2 + S^2} \\). We wish to show that the length of our complex exponential is constant and of unit length. This is to say that the length does not change, and consequently the square of the length would not either (we take the square as it is easier to differentiate):
 
 \\[ \frac{d}{dx} \mid e^{ix} \mid ^2 = \frac{d}{dx} (C^2 + S^2) = 2(CC' + SS') = 2(CC' - C'C) = 0 \\]
 
