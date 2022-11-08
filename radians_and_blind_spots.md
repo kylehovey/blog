@@ -48,13 +48,13 @@ To begin, we will examine [Euler's Formula](https://en.wikipedia.org/wiki/Euler%
 
 \\[ e^{i\theta} = \cos(\theta) + i \sin(theta) \\]
 
-where \\( i \\) is the [imaginary unit](https://en.wikipedia.org/wiki/Imaginary_unit) and \\( e \\) is Euler's number. \\(e \\) is chosen as the base of the exponent \\(e^x\\) because the rate at which \\(e^x\\) increases in value is [equal to itself at all times](https://www.youtube.com/watch?v=m2MIpDrF7Es). Wonderfully enough, when you feed the exponential function imaginary numbers [it begins to rotate](https://acko.net/blog/how-to-fold-a-julia-fractal/) in the [complex plane](https://en.wikipedia.org/wiki/Complex_plane). More precisely, the complex point \\(e^{i\theta}\\) is the point of distance \\(1\\) from the origin lying along [the unit circle](https://en.wikipedia.org/wiki/Unit_circle) at angle \\( \theta \\) in the complex plane:
+where \\( i \\) is the [imaginary unit](https://en.wikipedia.org/wiki/Imaginary_unit) and \\( e \\) is Euler's number. \\(e \\) is chosen as the base of the exponent \\(e^x\\) because the rate at which \\(e^x\\) increases in value is [equal to itself at all times](https://www.youtube.com/watch?v=m2MIpDrF7Es). Wonderfully enough, when you feed the exponential function imaginary numbers [it begins to rotate](https://acko.net/blog/how-to-fold-a-julia-fractal/) in the [complex plane](https://en.wikipedia.org/wiki/Complex_plane). More precisely, the complex point \\(e^{i\theta}\\) is the point of distance \\(1\\) from the origin lying along [the unit circle](https://en.wikipedia.org/wiki/Unit_circle) at angle \\( \theta \\) in the complex plane (and we will justify this):
 
 ![The Unit Circle](/blog/images/radians_and_blind_spots/unit_circle.svg)
 
 Recall that the derivative is an operator that determines the _rate of change_ of a given function with respect to its input. For a moment, instead of assuming that the argument to Euler's Formula is an angle, let's instead pretend that it is time. The derivative in this case now becomes velocity. In the world of complex numbers, this velocity has a direction (whereas in real numbers it would just be a single number). We can easily enough [find the derivative](https://en.wikipedia.org/wiki/Exponential_function#Derivatives_and_differential_equations) of our complex exponential function:
 
-\\[ \frac{d}{dx} e^{i t} = e^{i t} \\]
+\\[ \frac{d}{dx} e^{i t} = ie^{i t} \\]
 
 This means that for any point along the trajectory of our complex exponential \\( Z = e^{i t} \\) the velocity will simply be \\( iZ \\). As multiplication by \\( i \\) is just rotation of our position through a right angle, and our position is always equidistant to the origin, our velocity will always be the same and at a right angle to our position from the origin. The only trajectory where this construction is valid is a circle. The key insight here is that as our position is always of distance \\( 1 \\) from the origin, our velocity is also \\( 1 \\) unit per second. This means that after \\(2 \pi \\) seconds, we will have travelled a full revolution around the circle (because this is the [circumference](https://en.wikipedia.org/wiki/Circumference) of a circle of radius \\( 1 \\)).
 
@@ -109,7 +109,7 @@ For reasons you will soon see, it is useful to consider the derivative of either
 
 then, recalling from our previous proof that \\( C^2 + S^2 = 1 \\):
 
-\\[ (1 + \frac{S^2}{C^2})\theta' = (C^2 + S^2 + \frac{1 - C^2}{C^2})\theta' = \frac{\theta'}{C^2} \\]
+\\[ (1 + \frac{S^2}{C^2})\theta' = (1 + \frac{1 - C^2}{C^2})\theta' = (1 + \frac{1}{C^2} - \frac{C^2}{C^2})\theta' = \frac{\theta'}{C^2} \\]
 
 Taking the derivative of the RHS instead, we find:
 
@@ -119,6 +119,6 @@ Both RHS and LHS being equal, this means that:
 
 \\[ \frac{\theta'}{C^2} = \frac{1}{C^2} \\]
 
-which leaves only one conclusion: \\( \theta' = 1 \\)! This means that \\( \theta = x + c \\) where \\(c\\) is some constant. Since \\( e^{i 0} = 1\\) has an angle of \\( 0 \\) to the real axis, this means that \\( x \\) and the angle of our complex exponential \\( \theta \\) are one and the same. If we take \\(x\\) to be time again, recall that we travel a distance along the circle equal to the time taken. Since we now know that time is also equivalent to the angle, we can finally conclude (with confidence!) that the argument to the complex exponential is an angle measured from \\(0\\) at the start to \\(2 \pi\\) at the end. Also, as \\( cos \\) and \\( sin \\) are the horizontal and vertical components of a right triangle with unitary hypotenuse, we have also confirmed that they are indeed the real and imaginary parts of our complex exponential and its power series representation \\( C(x) + iS(x) = \cos(x) + i\sin(x) \\).
+which leaves only one conclusion: \\( \theta' = 1 \\)! This means that [via integration](https://en.wikipedia.org/wiki/Lists_of_integrals#Rational_functions) \\( \theta = x + \gamma \\) where \\(\gamma\\) is some arbitrary constant. Since \\( e^{i 0} = 1\\) has an angle of \\( 0 \\) to the real axis, this means that \\( x \\) and the angle of our complex exponential \\( \theta \\) are one and the same. If we take \\(x\\) to be time again, recall that we travel a distance along the circle equal to the time taken. Since we now know that time is also equivalent to the angle, we can finally conclude (with confidence!) that the argument to the complex exponential is an angle measured from \\(0\\) at the start to \\(2 \pi\\) at the end. Also, as \\( cos \\) and \\( sin \\) are the horizontal and vertical components of a right triangle with unitary hypotenuse, we have also confirmed that they are indeed the real and imaginary parts of our complex exponential and its power series representation \\( C(x) + iS(x) = \cos(x) + i\sin(x) \\).
 
 Again, this proof was taken from Tristan Needham's book Visual Complex Analysis. It provided a more than adequate answer to my long-standing question about radians, but beyond that I will recommend that you pick up a copy if you enjoyed any of this proof (or my rough retelling of it, at least). I hope that it provided you some satisfaction as it did for me. Whenever you have the time, go down rabbit holes trying to patch up your own understanding. You never know what interesting links you will find.
