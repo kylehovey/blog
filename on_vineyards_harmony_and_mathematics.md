@@ -67,7 +67,7 @@ Since an interval is simply a ratio of a note to another, and once we reach an o
 
 Likewise, there is an equivalency of intervals scaled by any integer multiple. The interval \\(3:2\\) sounds the same as the interval \\(30:20\\) as the ratio reduces to be the same (acoustically, this also means that the same interval will sound the same at different root pitches).
 
-It is also worth mentioning that if our metric of consonance is both the frequency perspective of aligning harmonics, and the time perspective of short repeating patterns, any interval representable by an [irrational number](https://en.wikipedia.org/wiki/Irrational_number){:target="_blank"} will not produce a good sounding interval. Rephrased, the harmonious intervals we are seeking for the quality of musical consonance will be rational numbers of the form \\(\frac{a}{b}\\) (equivalently written as \\(a:b\\) in music theory, where the convention is set with \\(a > b\\)).
+It is also worth mentioning that if our metric of consonance is both the frequency perspective of aligning harmonics, and the time perspective of short repeating patterns, any interval representable by an [irrational number](https://en.wikipedia.org/wiki/Irrational_number){:target="_blank"} is not likely to produce a good sounding interval. Rephrased, the harmonious intervals we are seeking for the quality of musical consonance will be rational numbers of the form \\(\frac{a}{b}\\) (equivalently written as \\(a:b\\) in music theory, where the convention is set with \\(a > b\\)).
 
 We have discovered a few basic rules that we can apply to derive the foundation of music theory:
 
