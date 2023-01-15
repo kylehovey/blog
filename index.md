@@ -6,6 +6,9 @@ title: Welcome
 
 Welcome to my Blog! I am a Computational Mathematics graduate from Utah State University. I grew up in the foothills of California, nestled between Tahoe and Yosemite. I am happiest when trudging up a fresh trail or starting up a new hobby.
 
+## [On Vineyards, Harmony, and Mathematics](./on-vineyards-harmony-and-mathematics)
+[![On Vineyards, Harmony, and Mathematics](/blog/images/vineyard/Pasted image 20230114180009.png)](./on-vineyards-harmony-and-mathematics)
+
 ## [Mathematical Blind Spots](./mathematical-blind-spots)
 [![Mathematical Blind Spots](/blog/images/radians_and_blind_spots/title_card.png)](./mathematical-blind-spots)
 
