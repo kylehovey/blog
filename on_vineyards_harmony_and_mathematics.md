@@ -96,10 +96,10 @@ What if we started by considering increasing denominators, listing out all fract
 
 Once again, mathematics has a name for this process and the terms it generates: the [Farey Sequence](https://en.wikipedia.org/wiki/Farey_sequence){:target="blank"}. The only difference is that the Farey Sequence does allow for repeated terms. This means that for the sixth order, the inclusion of \\(\frac{2}{6}\\) will be allowed and be written as \\(\frac{1}{3}\\). Each successive iteration of the Farey Series also includes the last, but adds the [mediant](https://en.wikipedia.org/wiki/Mediant_(mathematics){:target="blank"}) between each pair. This yields a similar, but unique definition of "The \\(n\\)th Farey sequence contains all irreducible fractions less than \\(1\\) with denominators less than \\(n\\)".
 
-\\[ F_1 = \Bigg\{ \frac{0}{1}, \frac{1}{1} \Bigg\} \\]
-\\[ F_2 = \Bigg\{ \frac{0}{1}, \frac{1}{2}, \frac{1}{1} \Bigg\} \\]
-\\[ F_3 = \Bigg\{ \frac{0}{1}, \frac{1}{3}, \frac{1}{2}, \frac{2}{3}, \frac{1}{1} \Bigg\} \\]
-\\[ F_4 = \Bigg\{ \frac{0}{1}, \frac{1}{4}, \frac{1}{3}, \frac{1}{2}, \frac{2}{3}, \frac{3}{4}, \frac{1}{1} \Bigg\} \\]
+\\[ F_1 = \huge\{\normalsize \frac{0}{1}, \frac{1}{1} \huge\} \\]
+\\[ F_2 = \huge\{\normalsize \frac{0}{1}, \frac{1}{2}, \frac{1}{1} \huge\} \\]
+\\[ F_3 = \huge\{\normalsize \frac{0}{1}, \frac{1}{3}, \frac{1}{2}, \frac{2}{3}, \frac{1}{1} \huge\} \\]
+\\[ F_4 = \huge\{\normalsize \frac{0}{1}, \frac{1}{4}, \frac{1}{3}, \frac{1}{2}, \frac{2}{3}, \frac{3}{4}, \frac{1}{1} \huge\} \\]
 \\[ F_5 = \cdots \\]
 
 This is an incredibly powerful abstraction. In a way, it allows us to select a certain amount of allowable complexity (bounded by the denominator) and produce all possible ratios with that property. In fact, you only need to construct the eighth Farey Sequence in order to produce all intervals we use in Western music. If you were to stop at five, you would only exclude the major seventh and the major semitone (which also explains why those two intervals are generally considered so discordant compared to the others). We can also plot these sets as different stepping stones along the path from \\(0\\) to \\(1\\) along rational stepping stones:
