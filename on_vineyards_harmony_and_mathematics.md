@@ -17,7 +17,7 @@ While I fully accept that much of music theory and its application is rooted in 
 
 ## Notes as Tones
 
-It would come as no surprise that music consists of periodic vibrations in the air. Around the age of four, I remember the first time I learned about speakers, and my subsequent confusion as to how such a device could even function. One note can be described as a pure pitch, oscillating some given amount of times per second (measured in Hertz or Hz). How could one physical object play two notes, or even thousands of them at the same time? In the same vein, how could one object moving in time produce the sound of someone singing and a guitar playing simultaneously?
+It would come as no surprise that music consists of periodic vibrations in the air. When I was little, I remember the first time I learned about speakers, and my subsequent confusion as to how such a device could even function. One note can be described as a pure pitch, oscillating some given amount of times per second (measured in Hertz or Hz). How could one physical object play two notes, or even thousands of them at the same time? In the same vein, how could one object moving in time produce the sound of someone singing and a guitar playing simultaneously?
 
 It turns out that any sound can be decomposed into an infinite sum of pure pitches in a process known as [Fourier decomposition](https://en.wikipedia.org/wiki/Fourier_analysis){:target="_blank"}. Any signal can be equivalently described by its frequency spectrum, and in many cases this provides an extremely useful context for analyzing things like sound and music that would be impossible without it.
 
