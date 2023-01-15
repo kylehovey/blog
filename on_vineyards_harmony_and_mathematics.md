@@ -169,7 +169,7 @@ For now, I will leave you with a list of other surprising places the Farey Seque
 
 ![The Mandelbrot Set and points that relate to the Farey Sequence](/blog/images/vineyard/Pasted image 20230114174141.png)
 
-[Asteroid Distribution With Respect to Orbital Period](https://www.researchgate.net/figure/Dwarf-planet-Juno-in-relation-to-the-main-Asteroid-Belt_fig1_259592631){:target="blank"} - If you plot the amount of asteroids in orbit around a central body in terms of the orbital period of a larger body in orbit around the same central body, there will be gaps in the asteroids proportional to terms in the Farey Sequence.
+[Asteroid Distribution With Respect to Orbital Period](https://www.researchgate.net/figure/Dwarf-planet-Juno-in-relation-to-the-main-Asteroid-Belt_fig1_259592631){:target="blank"} - If you plot the amount of asteroids in orbit around a central body in terms of the orbital period of another body in orbit, there will be gaps in the asteroids proportional to terms in the Farey Sequence.
 
 ![Distribution of asteroids with respect to orbital distance](/blog/images/vineyard/Pasted image 20230114174700.png)
 
