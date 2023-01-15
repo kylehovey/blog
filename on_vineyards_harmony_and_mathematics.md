@@ -73,7 +73,7 @@ We have discovered a few basic rules that we can apply to derive the foundation 
 
 **Law of Consonance**: Notes sound similar when their oscillations line up frequently in time, or if they share many of the same harmonics.
 
-**Law of Rationality**: As a corollary to this, irrational intervals will ensure that either of these properties will never occur, so musical intervals consist solely of rational numbers.
+**Law of Rationality**: As a corollary to the Law of Consonance, irrational intervals will ensure that either of the necessary properties for consonance will never occur, so musical intervals consist solely of rational numbers.
 
 **Law of Transposition**: Any interval (represented by \\(a:b\\)) relative to an octave is equivalent to the same interval one octave below (e.g. \\(6:2\\) is equivalent to \\(3:2\\)).
 
