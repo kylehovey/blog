@@ -59,6 +59,8 @@ Similar to the frequency perspective where every other harmonic of the octave li
 
 ![Both views of an octave as beats and as harmonics](/blog/images/vineyard/Pasted image 20230114143138.png)
 
+While this does explain the physical intuition for why we perceive the quality of equivalence in the octave, it is [also possible](https://www.quantamagazine.org/perceptions-of-musical-octaves-are-learned-not-wired-in-the-brain-20191030/){:target="_blank"} for cultures to not perceive it this way. When approaching the foundation of music theory it is also important to keep in mind that these metrics only begin to explain the complex emergent phenomena of music, lest we become overly reductionist. Still, these metrics do provide us with some strong intuition for cultural preferences in identifying intervals. It is most likely not a coincidence that a scale akin to the pentatonic scale (produced from the next type of interval we will learn about) was derived independently by multiple cultures around the world.
+
 ## A Map of All Intervals
 
 While unison and the octave are fascinating in their own right, as soon as you try to create music using only the octave you will soon realize that nothing interesting will come of it. Music as we know it is produced with not only a variety of intervals, but special orders for them as well we call scales.
