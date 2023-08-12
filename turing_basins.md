@@ -3,6 +3,7 @@ math: true
 permalink: turing-basins
 title: Turing's Hammer - Computation and Chaos
 layout: page
+date: 2020-05-13
 ---
 
 ![Starry Lake](/blog/images/turing_basins/expository/lake_stars.jpg)

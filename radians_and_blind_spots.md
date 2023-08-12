@@ -3,6 +3,7 @@ math: true
 permalink: mathematical-blind-spots
 title: Mathematical Blind Spots
 layout: page
+date: 2022-11-07
 ---
 
 ![A Mathematical Quandary](/blog/images/radians_and_blind_spots/title_card.png)

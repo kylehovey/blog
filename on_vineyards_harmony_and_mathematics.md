@@ -3,6 +3,7 @@ math: true
 permalink: on-vineyards-harmony-and-mathematics
 title: On Vineyards, Harmony, and Mathematics
 layout: page
+date: 2023-01-14
 ---
 
 ![Driving past vineyards](/blog/images/vineyard/vineyard_loop.webp)

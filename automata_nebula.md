@@ -3,6 +3,7 @@ math: true
 permalink: automata-nebula
 title: Digital Astronomy with Cellular Automata
 layout: page
+date: 2020-07-21
 ---
 
 ![UMAP Embedding](/blog/images/automata_nebula/plots/selected_run/UMAP_CA_Full_Annotated.png)

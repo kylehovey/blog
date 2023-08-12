@@ -3,6 +3,7 @@ math: true
 permalink: crouching-trig-hidden-fractal
 title: Crouching Trig, Hidden Fractal
 layout: page
+date: 2019-10-25
 ---
 
 In some esoteric need to further my math addiction, I recently purchased a [HP48](https://en.wikipedia.org/wiki/HP_48_series){:target="_blank"} Reverse Polish Notation calculator. I was demonstrating the workings of the stack to my friend, and how each trig function supported complex numbers out-of-the-box. I absentmindedly entered \\(4 + 5i\\) into the stack, then pressed each trig key in sequence: \\(\sin\\), \\(\cos\\), \\(\tan\\). I was really surprised to see that the result was not some unwieldy floating point, but rather was simply:
