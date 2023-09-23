@@ -6,7 +6,7 @@ layout: page
 date: 2023-09-21
 ---
 
-![Two snakes intertwined in a trefoil knot eating each others' tails. One represents humanity, one represents AI](/blog/images/mutually_assured_recursion/snake_trefoil.png){ :width="600px" }
+![Two snakes intertwined in a trefoil knot eating each others' tails. One represents humanity, one represents AI](/blog/images/mutually_assured_recursion/snake_trefoil.png)
 *Artwork by my good friend [Sophia Wood](https://fractalkitty.com/)*
 
 # Compression
@@ -52,10 +52,8 @@ What we find is that correlation distance is not only maximized at the critical 
 
 What is perhaps even more surprising than the ability to transmit information across vast distances solely through the interaction of adjacent elements in a system is what happens to the structure of the system as a whole at the critical point. If you observe the distribution of clusters of particles in one orientation or another, you will find that the entire system becomes scale-free. That is to say that no matter what scale you are observing the system at, you will see the same patterns arise. This would be like opening up Google Earth and being able zoom to a random level of magnification, yet not being able to tell that anything had changed. This fractal property exists only at the temperature is at the critical point. Below that temperature, and as you zoom out the system becomes homogenous. Above that temperature, and as you zoom out the system becomes chaotic and random.
 
-<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MxRddFrEnPc?si=l2OMHb6dTiYweM0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 *Simulation and Animation by [Douglas Ashton](https://www.youtube.com/alsodug){ :target="_blank" }*
-</center>
 
 If you read further on the Critical Brain Hypothesis, you will see why this scale-free property is not only interesting but also incredibly useful. It is the reason we are able to respond to slight and major sensory inputs with the same neural structures. These scale-free properties also offer up a new way of measuring when a system is at the critical point. Another way of defining a scale-free system is to say that the distribution of its structures (either in size or in time) follow a [Power Law](https://en.wikipedia.org/wiki/Power_law){ :target="_blank" }. When a system is at the critical point, it will demonstrate power-law distribution of its structure. The inverse, however, is not always true. Still, from experimental evidence we have so far it is often the case that when we observe the power law arising in nature it implies that some system is operating near a critical point.
 
@@ -139,7 +137,9 @@ Our own evolution depended on high quality information from our environment, alt
 
 A lack of free will is the implication that we have no choice in the information we process. If we are exposed to a source of information, may it be light, text, feeling, sound, or otherwise, it passes through us and therefore through our mind. Up until this point in human history, the information we have been exposed to has originated from our natural environment and surrounding communities. Yet, even before the dawn of modern artificial intelligence, we have begun to see the impact of misinformation campaigns and low quality information. Whole cults have lived and died by the skilled manipulation of conscious thought, and with the prolific nature of the internet today we all know the dangers of misinformation and the erosion of factual content.
 
+{:refdef: style="text-align: center;"}
 ![An Ouroboros: a snake eating its own tail. This is a common icon of recursion.](/blog/images/mutually_assured_recursion/ouroboros.png){: width="400px" }
+{: refdef}
 
 An interesting consequence of information encoding, such as in compression, hashing, or training large language models, is the concept of lossy encoding. We may encode the essence of information and discard much of the content in the process. Take for example a phone conversation: even with profound distortion and the omission of the majority of the frequency spectrum we are still able to understand the words spoken on the other end of a call. In the case of image compression, JPEG encoding performs a similar transform on visual content to discard high frequency spatial data while retaining lower frequency information. When combined, the content of the image is still clear. Compression seems to be very similar to the concept of artificial intelligence, but compression does not have to be lossless to be effective.
 
