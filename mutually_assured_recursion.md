@@ -11,7 +11,7 @@ date: 2023-09-21
 *Artwork by my good friend [Sophia Wood](https://fractalkitty.com/)*
 {:refdef}
 
-As we enter this fantastic and bizarre age of Artificial Intelligence, we are rapidly coming to grips with philosophical questions that were reserved for heady academic discussions just a few years ago. The nature of consciousness continues to elude us, but novel experiences born from scientific progress in recent years is begining to elucidate a larger picture of the world that is more monistic than anthropocentric. At both ends of the spectrum, we are seeing an underlying information architecture that forms an emergent foundation for sentience and qualia. Join me for a brief journey into recent advancements and how blurred the lines are between disparate subjects of mathematics, neuroscience, physics, computability, and philosophy.
+As we enter this fantastic and bizarre age of Artificial Intelligence, we are rapidly coming to grips with philosophical questions that were reserved for heady academic discussions just a few years ago. The nature of consciousness continues to elude us, but novel experiences born from scientific progress in recent years begins to elucidate a larger picture of the world that is more monistic than anthropocentric. At both ends of the spectrum, we are seeing an underlying information architecture that forms an emergent foundation for sentience and qualia. Join me for a brief journey into recent advancements and how blurred the lines are between disparate subjects of mathematics, neuroscience, physics, computability, and philosophy.
 
 # Compression
 
@@ -57,7 +57,7 @@ What we find is that correlation distance is not only maximized at the critical 
 What is perhaps even more surprising than the ability to transmit information across vast distances solely through the interaction of adjacent elements in a system is what happens to the structure of the system as a whole at the critical point. If you observe the distribution of clusters of particles in one orientation or another, you will find that the entire system becomes scale-free. That is to say that no matter what scale you are observing the system at, you will see the same patterns arise. This would be like opening up Google Earth and being able zoom to a random level of magnification, yet not being able to tell that anything had changed. This fractal property exists only at the temperature is at the critical point. Below that temperature, and as you zoom out the system becomes homogenous. Above that temperature, and as you zoom out the system becomes chaotic and random.
 
 {:refdef: style="display:flex;align-items:center;flex-direction:column;"}
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MxRddFrEnPc?si=l2OMHb6dTiYweM0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="300px" src="https://www.youtube.com/embed/MxRddFrEnPc?si=l2OMHb6dTiYweM0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 *Simulation and Animation by [Douglas Ashton](https://www.youtube.com/alsodug){:target="_blank"}*
 {:refdef}
 
