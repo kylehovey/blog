@@ -6,7 +6,7 @@ layout: page
 date: 2023-09-21
 ---
 
-![Two snakes intertwined in a trefoil knot eating each others' tails. One represents humanity, one represents AI](/blog/images/mutually_assured_recursion/snake_trefoil.png)
+![Two snakes intertwined in a trefoil knot eating each others' tails. One represents humanity, one represents AI](/blog/images/mutually_assured_recursion/snake_trefoil.jpg)
 *Artwork by my good friend [Sophia Wood](https://fractalkitty.com/)*
 
 # Compression
