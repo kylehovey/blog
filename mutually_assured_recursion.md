@@ -11,7 +11,7 @@ date: 2023-09-21
 *Artwork by my good friend [Sophia Wood](https://fractalkitty.com/)*
 {:refdef}
 
-As we enter this fantastic and bizzarre age of Artificial Intelligence, we are rapidly coming to grips with philosophical questions that were reserved for heady academic discussions just a few years ago. The nature of conciousness continues to elude us, but novel experiences born from scientific progress in recent years is begining to elucidate a larger picture of the world that is more monistic than anthropocentric. At both ends of the spectrum, we are seeing an underlying information architecture that forms an emergent foundation for sentience and qualia. Join me for a brief journey into recent advancements and how blurred the lines are between disparate subjects of mathematics, neuroscience, physics, computability, and philosophy.
+As we enter this fantastic and bizarre age of Artificial Intelligence, we are rapidly coming to grips with philosophical questions that were reserved for heady academic discussions just a few years ago. The nature of consciousness continues to elude us, but novel experiences born from scientific progress in recent years is begining to elucidate a larger picture of the world that is more monistic than anthropocentric. At both ends of the spectrum, we are seeing an underlying information architecture that forms an emergent foundation for sentience and qualia. Join me for a brief journey into recent advancements and how blurred the lines are between disparate subjects of mathematics, neuroscience, physics, computability, and philosophy.
 
 # Compression
 
