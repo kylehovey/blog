@@ -328,6 +328,11 @@ tbody tr:nth-child(odd) th {
  * page is wrapped in `.page` and is only used on the page layout.
  */
 
+.page {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .page,
 .post {
   margin-bottom: 4em;
