@@ -6,7 +6,7 @@ layout: page
 date: 2023-09-21
 ---
 
-![Two snakes intertwined in a trefoil knot eating each others' tails. One represents humanity, one represents AI](/blog/images/mutually_assured_recursion/snake_trefoil.png)
+![Two snakes intertwined in a trefoil knot eating each others' tails. One represents humanity, one represents AI](/blog/images/mutually_assured_recursion/snake_trefoil.png){ :width="600px" }
 *Artwork by my good friend [Sophia Wood](https://fractalkitty.com/)*
 
 # Compression
@@ -139,7 +139,7 @@ Our own evolution depended on high quality information from our environment, alt
 
 A lack of free will is the implication that we have no choice in the information we process. If we are exposed to a source of information, may it be light, text, feeling, sound, or otherwise, it passes through us and therefore through our mind. Up until this point in human history, the information we have been exposed to has originated from our natural environment and surrounding communities. Yet, even before the dawn of modern artificial intelligence, we have begun to see the impact of misinformation campaigns and low quality information. Whole cults have lived and died by the skilled manipulation of conscious thought, and with the prolific nature of the internet today we all know the dangers of misinformation and the erosion of factual content.
 
-![An Ouroboros: a snake eating its own tail. This is a common icon of recursion.](/blog/images/mutually_assured_recursion/ouroboros.png)
+![An Ouroboros: a snake eating its own tail. This is a common icon of recursion.](/blog/images/mutually_assured_recursion/ouroboros.png){: width="400px" }
 
 An interesting consequence of information encoding, such as in compression, hashing, or training large language models, is the concept of lossy encoding. We may encode the essence of information and discard much of the content in the process. Take for example a phone conversation: even with profound distortion and the omission of the majority of the frequency spectrum we are still able to understand the words spoken on the other end of a call. In the case of image compression, JPEG encoding performs a similar transform on visual content to discard high frequency spatial data while retaining lower frequency information. When combined, the content of the image is still clear. Compression seems to be very similar to the concept of artificial intelligence, but compression does not have to be lossless to be effective.
 
