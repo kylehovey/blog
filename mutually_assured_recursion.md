@@ -52,8 +52,10 @@ What we find is that correlation distance is not only maximized at the critical 
 
 What is perhaps even more surprising than the ability to transmit information across vast distances solely through the interaction of adjacent elements in a system is what happens to the structure of the system as a whole at the critical point. If you observe the distribution of clusters of particles in one orientation or another, you will find that the entire system becomes scale-free. That is to say that no matter what scale you are observing the system at, you will see the same patterns arise. This would be like opening up Google Earth and being able zoom to a random level of magnification, yet not being able to tell that anything had changed. This fractal property exists only at the temperature is at the critical point. Below that temperature, and as you zoom out the system becomes homogenous. Above that temperature, and as you zoom out the system becomes chaotic and random.
 
+{:refdef: style="display:flex;align-items:center;flex-direction:column;"}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MxRddFrEnPc?si=l2OMHb6dTiYweM0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 *Simulation and Animation by [Douglas Ashton](https://www.youtube.com/alsodug){:target="_blank"}*
+{:refdef}
 
 If you read further on the Critical Brain Hypothesis, you will see why this scale-free property is not only interesting but also incredibly useful. It is the reason we are able to respond to slight and major sensory inputs with the same neural structures. These scale-free properties also offer up a new way of measuring when a system is at the critical point. Another way of defining a scale-free system is to say that the distribution of its structures (either in size or in time) follow a [Power Law](https://en.wikipedia.org/wiki/Power_law){:target="_blank"}. When a system is at the critical point, it will demonstrate power-law distribution of its structure. The inverse, however, is not always true. Still, from experimental evidence we have so far it is often the case that when we observe the power law arising in nature it implies that some system is operating near a critical point.
 
@@ -137,7 +139,7 @@ Our own evolution depended on high quality information from our environment, alt
 
 A lack of free will is the implication that we have no choice in the information we process. If we are exposed to a source of information, may it be light, text, feeling, sound, or otherwise, it passes through us and therefore through our mind. Up until this point in human history, the information we have been exposed to has originated from our natural environment and surrounding communities. Yet, even before the dawn of modern artificial intelligence, we have begun to see the impact of misinformation campaigns and low quality information. Whole cults have lived and died by the skilled manipulation of conscious thought, and with the prolific nature of the internet today we all know the dangers of misinformation and the erosion of factual content.
 
-{:refdef: style="text-align: center;"}
+{:refdef: style="display:flex;align-items:center;flex-direction:column;"}
 ![An Ouroboros: a snake eating its own tail. This is a common icon of recursion.](/blog/images/mutually_assured_recursion/ouroboros.png){: width="400px" }
 {:refdef}
 
