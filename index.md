@@ -7,7 +7,7 @@ title: Welcome
 Welcome to my Blog! I am a Computational Mathematics graduate from Utah State University. I grew up in the foothills of California, nestled between Tahoe and Yosemite. I am happiest when trudging up a fresh trail or starting up a new hobby.
 
 ## [Mutually Assured Recursion](./mutually-assured-recursion)
-[![Mutually Assured Recursion](/blog/images/mutually_assured_recursion/snake_trefoil.png)](./mutually-assured-recursion)
+[![Mutually Assured Recursion](/blog/images/mutually_assured_recursion/snake_trefoil.jpg)](./mutually-assured-recursion)
 
 ## [On Vineyards, Harmony, and Mathematics](./on-vineyards-harmony-and-mathematics)
 [![On Vineyards, Harmony, and Mathematics](/blog/images/vineyard/Pasted image 20230114180009.png)](./on-vineyards-harmony-and-mathematics)
